@@ -1,6 +1,7 @@
-import { About3 } from "@/components/ui/about3";
-import { Feature13 } from "@/components/ui/feature13";
-import { Hero47 } from "@/components/ui/hero47";
+
+import About3 from "@/components/about3";
+import Feature13 from "@/components/feature13";
+import { Hero47 } from "@/components/hero47";
 
 export default function ContactPage() {
   return (
