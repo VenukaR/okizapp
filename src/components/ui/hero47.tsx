@@ -73,12 +73,14 @@ const Hero47 = ({
             <Image
               src={image.src}
               alt={image.alt}
-              className="h-full w-full object-cover object-center"              
+              className="h-full w-full object-cover object-center"      
+                    width={0}
+            height={0}
             />
           </div>
           <Image
             className="relative z-10"
-            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/mockups/phone-2.png"
+            src="/img/phone-2.png"
             width={450}
             height={889}
             alt="iphone"

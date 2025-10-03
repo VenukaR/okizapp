@@ -55,6 +55,8 @@ const Feature13 = ({
                     src={feature.image}
                     alt={feature.title}
                     className="h-full w-full object-cover"
+                                width={0}
+            height={0}
                   />
                 </div>
               </div>

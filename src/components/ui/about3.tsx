@@ -105,6 +105,8 @@ const About3 = ({
             src={mainImage.src}
             alt={mainImage.alt}
             className="size-full max-h-[620px] rounded-xl object-cover lg:col-span-2"
+                        width={0}
+            height={0}
           />
           <div className="flex flex-col gap-7 md:flex-row lg:flex-col">
             <div className="flex flex-col justify-between gap-6 rounded-xl bg-muted p-7 md:w-1/2 lg:w-auto">
@@ -112,6 +114,8 @@ const About3 = ({
                 src={breakout.src}
                 alt={breakout.alt}
                 className="mr-auto h-12"
+                            width={0}
+            height={0}
               />
               <div>
                 <p className="mb-2 text-lg font-semibold">{breakout.title}</p>
@@ -127,6 +131,8 @@ const About3 = ({
               src={secondaryImage.src}
               alt={secondaryImage.alt}
               className="grow basis-0 rounded-xl object-cover md:w-1/2 lg:min-h-0 lg:w-auto"
+                        width={0}
+            height={0}
             />
           </div>
         </div>
@@ -139,6 +145,8 @@ const About3 = ({
                   src={company.src}
                   alt={company.alt}
                   className="h-6 w-auto md:h-8"
+                              width={0}
+            height={0}
                 />
               </div>
             ))}
