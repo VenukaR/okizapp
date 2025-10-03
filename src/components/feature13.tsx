@@ -71,6 +71,8 @@ const Feature13 = ({
                       <Image
                         src={feature.image}
                         alt={feature.title}
+                        width={400}
+                        height={300}
                         className="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
                       />
                     </div>

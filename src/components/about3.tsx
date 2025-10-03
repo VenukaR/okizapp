@@ -204,6 +204,8 @@ const About3 = ({
               src={mainImage.src}
               alt={mainImage.alt}
               className="w-full h-full max-h-[620px] object-cover transform-gpu group-hover:scale-105 transition-all duration-1000 ease-out will-change-transform"
+              width={800}
+              height={600}
             />
           </div>
           
@@ -215,6 +217,8 @@ const About3 = ({
                   src={breakout.src}
                   alt={breakout.alt}
                   className="h-12 w-auto transform-gpu group-hover:scale-110 transition-all duration-500 ease-out will-change-transform"
+                  width={100}
+                  height={50}
                 />
               )}
               <div>
@@ -243,6 +247,8 @@ const About3 = ({
                 src={secondaryImage.src}
                 alt={secondaryImage.alt}
                 className="w-full h-full object-cover transform-gpu group-hover:scale-105 transition-all duration-1000 ease-out will-change-transform"
+                width={400}
+                height={400}
               />
             </div>
           </div>
@@ -262,6 +268,8 @@ const About3 = ({
                 <Image
                   src={company.src}
                   alt={company.alt}
+                  width={100}
+                  height={50}
                   className={`h-16 md:h-20 w-auto object-contain transition-all duration-700 ease-in-out will-change-opacity ${
                     hoveredCompany === idx ? 'opacity-100 filter-none' : 'opacity-60 grayscale'
                   }`}

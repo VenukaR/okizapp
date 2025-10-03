@@ -143,6 +143,8 @@ const Team1 = ({
                       src={member.avatar}
                       alt={member.name}
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                      width={400}
+                      height={400}
                     />
                   </div>
                   {/* Overlay on hover */}

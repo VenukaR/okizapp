@@ -138,6 +138,8 @@ const Logos8 = ({
                       src={logo.logo}
                       alt={`${logo.name} logo`}
                       className="w-full h-full object-cover rounded-xl transform group-hover:scale-110 transition-transform duration-700"
+                      width={160}
+                      height={160}
                     />
                     {/* Overlay with company name */}
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-600/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl flex items-end justify-center pb-3">

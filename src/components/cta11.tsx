@@ -114,6 +114,8 @@ const Cta11 = ({
                     src={imageSrc} 
                     alt={imageAlt} 
                     className="w-full h-full object-cover"
+                    width={400}
+                    height={400}
                   />
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-600/40 to-transparent"></div>

@@ -1,7 +1,7 @@
 "use client";
 import About3 from "@/components/about3";
 import Feature13 from "@/components/feature13";
-import { Hero47 } from "@/components/hero47";
+import Hero47 from "@/components/hero47";
 
 export default function ShopsPage() {
   return (
