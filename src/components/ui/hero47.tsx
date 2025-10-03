@@ -28,16 +28,16 @@ const Hero47 = ({
   description = "OKIZ is Sri Lanka’s first student-only discount platform, connecting university students with local shops through QR-powered, verified savings.",
   buttons = {
     primary: {
-      text: "Get Started",
+      text: "Learn more",
       url: "#",
     },
     secondary: {
-      text: "Read the docs",
+      text: "Contact Us",
       url: "#",
     },
   },
   image = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-7-tall.svg",
+    src: "/img/mockupback.png",
     alt: "Placeholder",
   },
 }: Hero47Props) => {
@@ -47,23 +47,25 @@ const Hero47 = ({
         <div className="flex flex-col gap-7 lg:w-2/3">
           <h2 className="text-5xl font-semibold text-foreground md:text-5xl lg:text-8xl">
             <span>{heading}</span>
-            <span className="text-muted-foreground">{subheading}</span>
+            <span className=" text-primary-dark">{subheading}</span>
           </h2>
-            <p className="text-base text-primary-blue md:text-lg lg:text-xl ">
+            <p className="text-base text-foreground md:text-lg lg:text-xl ">
             {description}
             </p>
           <div className="flex flex-wrap items-start gap-5 lg:gap-7">
-            <Button asChild>
+            <Button asChild className="bg-primary-dark hover:bg-primary-dark/90">
               <a href={buttons.primary?.url}>
-                <div className="flex items-center gap-2">
-                  <ArrowUpRight className="size-4" />
-                </div>
-                <span className="pr-6 pl-4 text-sm whitespace-nowrap lg:pr-8 lg:pl-6 lg:text-base">
-                  {buttons.primary?.text}
-                </span>
+              <div className="flex items-center gap-2">
+                <ArrowUpRight className="size-4" />
+              </div>
+              <span className="pr-6 pl-4 text-sm whitespace-nowrap lg:pr-8 lg:pl-6 lg:text-base ">
+                {buttons.primary?.text}
+              </span>
               </a>
             </Button>
-            <Button asChild variant="link" className="underline">
+            <Button asChild variant="outline" 
+            // className="underline"
+            >
               <a href={buttons.secondary?.url}>{buttons.secondary?.text}</a>
             </Button>
           </div>
@@ -74,8 +76,8 @@ const Hero47 = ({
               src={image.src}
               alt={image.alt}
               className="h-full w-full object-cover object-center"      
-                    width={0}
-            height={0}
+                    width={450}
+            height={889}
             />
           </div>
           <Image

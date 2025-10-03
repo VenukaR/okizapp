@@ -1,8 +1,12 @@
 "use client";
 
 import { About3 } from "@/components/ui/about3";
+import { Cta11 } from "@/components/ui/cta11";
+import { Faq1 } from "@/components/ui/faq1";
 import { Feature13 } from "@/components/ui/feature13";
 import { Hero47 } from "@/components/ui/hero47";
+import { Logos8 } from "@/components/ui/logos8";
+import { Team1 } from "@/components/ui/team1";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -27,6 +31,20 @@ export default function Home() {
       <section className="py-8 md:py-12 lg:py-20">
         <Feature13/>
         </section>
+        <section className="py-8 md:py-12 lg:py-20">
+        <Team1/>
+        </section>
+          <section className="py-8 md:py-12 lg:py-20">
+        <Logos8/>
+        </section>
+          <section className="py-8 md:py-12 lg:py-20">
+        <Faq1/>
+        </section>
+          <section className="py-8 md:py-12 lg:py-20">
+        <Cta11/>
+        </section>
+        
+        
 
     </div>
   )

@@ -35,66 +35,66 @@ interface About3Props {
 
 const defaultCompanies = [
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg",
-    alt: "Arc",
+    src: "/img/unilogo/iit.png",
+    alt: "IIT",
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg",
-    alt: "Descript",
+    src: "/img/unilogo/sliit.png",
+    alt: "SLIIT",
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg",
-    alt: "Mercury",
+    src: "/img/unilogo/uc.png",
+    alt: "University of Colombo",
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg",
-    alt: "Ramp",
+    src: "/img/unilogo/um.png",
+    alt: "University of Moratuwa",
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-5.svg",
-    alt: "Retool",
+    src: "/img/unilogo/nsbm.png",
+    alt: "NSBM",
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-6.svg",
-    alt: "Watershed",
+    src: "/img/unilogo/nibm.png",
+    alt: "NIBM",
   },
 ];
 
 const defaultAchievements = [
-  { label: "Companies Supported", value: "300+" },
-  { label: "Projects Finalized", value: "800+" },
-  { label: "Happy Customers", value: "99%" },
-  { label: "Recognized Awards", value: "10+" },
+  { label: "Universities Reached", value: "01+" },
+  { label: "Students Eligible for Discounts", value: "300,000+" },
+  { label: "Partnered Shops & Brands", value: "01+" },
+  { label: "Average Student Savings", value: "20%" },
 ];
 
 const About3 = ({
   title = "About Us",
-  description = "Shadcnblocks is a passionate team dedicated to creating innovative solutions that empower businesses to thrive in the digital age.",
+  description = "is Sri Lanka’s first digital platform built exclusively to connect university students with verified discounts at local shops and brands. We believe student life should be affordable — and that businesses deserve smarter ways to attract loyal customers.",
   mainImage = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    src: "/img/students.png",
     alt: "placeholder",
   },
   secondaryImage = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    src: "/img/logoblue.png",
     alt: "placeholder",
   },
   breakout = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+    src: "",
     alt: "logo",
-    title: "Hundreds of blocks at Shadcnblocks.com",
+    title: "Exclusive Student Discounts in Sri Lanka",
     description:
-      "Providing businesses with effective tools to improve workflows, boost efficiency, and encourage growth.",
-    buttonText: "Discover more",
+      "Helping students save more while giving shops a smarter way to grow their customer base.",
+    buttonText: "Discover Zent",
     buttonUrl: "https://shadcnblocks.com",
   },
   companiesTitle = "Valued by clients worldwide",
   companies = defaultCompanies,
-  achievementsTitle = "Our Achievements in Numbers",
-  achievementsDescription = "Providing businesses with effective tools to improve workflows, boost efficiency, and encourage growth.",
+  achievementsTitle = "Our Impact in Numbers",
+  achievementsDescription = "Building Sri Lanka’s first student discount platform to empower students and help businesses grow.",
   achievements = defaultAchievements,
 }: About3Props = {}) => {
   return (
-    <section className="py-32">
+    <section className="py-10">
       <div className="container">
         <div className="mb-14 grid gap-5 text-center md:grid-cols-2 md:text-left">
           <h1 className="text-5xl font-semibold">{title}</h1>
@@ -105,7 +105,7 @@ const About3 = ({
             src={mainImage.src}
             alt={mainImage.alt}
             className="size-full max-h-[620px] rounded-xl object-cover lg:col-span-2"
-                        width={0}
+                        width={620}
             height={0}
           />
           <div className="flex flex-col gap-7 md:flex-row lg:flex-col">
@@ -115,7 +115,7 @@ const About3 = ({
                 alt={breakout.alt}
                 className="mr-auto h-12"
                             width={0}
-            height={0}
+            height={100}
               />
               <div>
                 <p className="mb-2 text-lg font-semibold">{breakout.title}</p>
@@ -127,12 +127,12 @@ const About3 = ({
                 </a>
               </Button>
             </div>
-            <Image
+       <Image
               src={secondaryImage.src}
               alt={secondaryImage.alt}
-              className="grow basis-0 rounded-xl object-cover md:w-1/2 lg:min-h-0 lg:w-auto"
-                        width={0}
-            height={0}
+              className="grow basis-0 rounded-xl object-cover md:w-1/12 lg:min-h-0 lg:w-auto w-8"
+              width={80}
+              height={80}
             />
           </div>
         </div>
@@ -144,8 +144,8 @@ const About3 = ({
                 <Image
                   src={company.src}
                   alt={company.alt}
-                  className="h-6 w-auto md:h-8"
-                              width={0}
+                  className="h-100 w-auto md:h-20"
+                              width={200}
             height={0}
                 />
               </div>
