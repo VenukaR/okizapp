@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Image from 'next/image';
 
 interface TeamMember {
   id: string;
@@ -138,7 +139,7 @@ const Team1 = ({
                 {/* Image Container */}
                 <div className="relative mb-6 overflow-hidden rounded-xl">
                   <div className="aspect-square overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200">
-                    <img
+                    <Image
                       src={member.avatar}
                       alt={member.name}
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Cta11Props {
   heading?: string;
@@ -51,7 +52,7 @@ const Cta11 = ({
                   className="group inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
                 >
                   <span className="mr-2">🎓</span>
-                  <span>I'm a Student</span>
+                  <span>I&apos;m a Student</span>
                   <svg 
                     className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" 
                     fill="none" 
@@ -67,7 +68,7 @@ const Cta11 = ({
                   className="group inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-bold rounded-xl border-2 border-white/50 hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl backdrop-blur-sm"
                 >
                   <span className="mr-2">🛍️</span>
-                  <span>I'm a Shop</span>
+                  <span>I&apos;m a Shop</span>
                   <svg 
                     className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" 
                     fill="none" 
@@ -109,7 +110,7 @@ const Cta11 = ({
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-blue-300 rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur-xl"></div>
                 
                 <div className="relative w-full aspect-square overflow-hidden rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
-                  <img 
+                  <Image 
                     src={imageSrc} 
                     alt={imageAlt} 
                     className="w-full h-full object-cover"

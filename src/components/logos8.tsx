@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 interface Logo {
   name: string;
@@ -133,7 +134,7 @@ const Logos8 = ({
               >
                 <div className="w-40 h-40 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 border border-blue-100 overflow-hidden p-4 flex items-center justify-center">
                   <div className="relative w-full h-full">
-                    <img
+                    <Image
                       src={logo.logo}
                       alt={`${logo.name} logo`}
                       className="w-full h-full object-cover rounded-xl transform group-hover:scale-110 transition-transform duration-700"

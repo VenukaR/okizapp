@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Feature {
   id: string;
@@ -67,7 +68,7 @@ const Feature13 = ({
                     </div>
                     <div className="w-2/5 shrink-0 relative overflow-hidden">
                       <div className={`absolute inset-0 bg-gradient-to-br ${gradientClass} opacity-20 group-hover:opacity-30 transition-opacity duration-500`}></div>
-                      <img
+                      <Image
                         src={feature.image}
                         alt={feature.title}
                         className="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"

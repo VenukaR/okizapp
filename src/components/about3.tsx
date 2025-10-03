@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 interface About3Props {
   title?: string;
@@ -199,7 +200,7 @@ const About3 = ({
         {/* Images Grid */}
         <div className="grid gap-6 lg:grid-cols-3 mb-20">
           <div className="lg:col-span-2 group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-700 ease-in-out will-change-transform">
-            <img
+            <Image
               src={mainImage.src}
               alt={mainImage.alt}
               className="w-full h-full max-h-[620px] object-cover transform-gpu group-hover:scale-105 transition-all duration-1000 ease-out will-change-transform"
@@ -210,7 +211,7 @@ const About3 = ({
             {/* Breakout Card */}
             <div className="flex flex-col justify-between gap-6 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 md:w-1/2 lg:w-auto shadow-lg hover:shadow-xl transition-all duration-700 ease-in-out border border-blue-200 group hover:border-blue-300 will-change-transform">
               {breakout.src && (
-                <img
+                <Image
                   src={breakout.src}
                   alt={breakout.alt}
                   className="h-12 w-auto transform-gpu group-hover:scale-110 transition-all duration-500 ease-out will-change-transform"
@@ -238,7 +239,7 @@ const About3 = ({
 
             {/* Secondary Image */}
             <div className="md:w-1/2 lg:w-auto overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-700 ease-in-out group will-change-transform">
-              <img
+              <Image
                 src={secondaryImage.src}
                 alt={secondaryImage.alt}
                 className="w-full h-full object-cover transform-gpu group-hover:scale-105 transition-all duration-1000 ease-out will-change-transform"
@@ -258,7 +259,7 @@ const About3 = ({
                 onMouseEnter={() => setHoveredCompany(idx)}
                 onMouseLeave={() => setHoveredCompany(null)}
               >
-                <img
+                <Image
                   src={company.src}
                   alt={company.alt}
                   className={`h-16 md:h-20 w-auto object-contain transition-all duration-700 ease-in-out will-change-opacity ${
