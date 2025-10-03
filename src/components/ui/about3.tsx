@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 interface About3Props {
   title?: string;
@@ -100,14 +101,14 @@ const About3 = ({
           <p className="text-muted-foreground">{description}</p>
         </div>
         <div className="grid gap-7 lg:grid-cols-3">
-          <img
+          <Image
             src={mainImage.src}
             alt={mainImage.alt}
             className="size-full max-h-[620px] rounded-xl object-cover lg:col-span-2"
           />
           <div className="flex flex-col gap-7 md:flex-row lg:flex-col">
             <div className="flex flex-col justify-between gap-6 rounded-xl bg-muted p-7 md:w-1/2 lg:w-auto">
-              <img
+              <Image
                 src={breakout.src}
                 alt={breakout.alt}
                 className="mr-auto h-12"
@@ -122,7 +123,7 @@ const About3 = ({
                 </a>
               </Button>
             </div>
-            <img
+            <Image
               src={secondaryImage.src}
               alt={secondaryImage.alt}
               className="grow basis-0 rounded-xl object-cover md:w-1/2 lg:min-h-0 lg:w-auto"
@@ -134,7 +135,7 @@ const About3 = ({
           <div className="mt-8 flex flex-wrap justify-center gap-8">
             {companies.map((company, idx) => (
               <div className="flex items-center gap-3" key={company.src + idx}>
-                <img
+                <Image
                   src={company.src}
                   alt={company.alt}
                   className="h-6 w-auto md:h-8"

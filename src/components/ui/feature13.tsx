@@ -1,3 +1,4 @@
+import Image from "next/image";
 interface Feature {
   id: string;
   title: string;
@@ -50,7 +51,7 @@ const Feature13 = ({
                   <h3 className="text-2xl md:text-4xl">{feature.title}</h3>
                 </div>
                 <div className="md:1/3 w-2/5 shrink-0 rounded-r-lg border-l">
-                  <img
+                  <Image
                     src={feature.image}
                     alt={feature.title}
                     className="h-full w-full object-cover"
