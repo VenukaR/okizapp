@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Hero47Props {
   heading?: string;
@@ -68,7 +69,7 @@ const Hero47 = ({
             <div className="inline-block w-fit px-4 py-2 bg-blue-100 rounded-full border border-blue-200 backdrop-blur-sm">
               <p className="text-blue-700 text-sm font-semibold flex items-center gap-2">
                 <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
-                Sri Lanka's #1 Student Discount Platform
+                Sri Lanka&apos;s #1 Student Discount Platform
               </p>
             </div>
 
@@ -154,15 +155,17 @@ const Hero47 = ({
               <div className="relative">
                 {/* Background Image inside phone */}
                 <div className="absolute top-2.5 left-1/2 h-[92%] w-[69%] -translate-x-[52%] overflow-hidden rounded-[35px] shadow-2xl">
-                  <img
+                  <Image
                     src={image.src}
                     alt={image.alt}
                     className="h-full w-full object-cover object-center"
+                    width={310}
+                    height={620}
                   />
                 </div>
                 
                 {/* Phone Frame */}
-                <img
+                <Image
                   className="relative z-10 drop-shadow-2xl"
                   src="/img/phone-2.png"
                   width={450}
