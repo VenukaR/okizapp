@@ -197,11 +197,11 @@ const Hero47 = ({
 </div>
 
 {/* 🚀 Extra Image OUTSIDE phone */}
-<div className="absolute right-[-140px] bottom-[15] hidden lg:block z-30 translate-x-25 translate-y-2">
+<div className="absolute z-30 block lg:right-[-140px] lg:bottom-[15] right-[-60px] bottom-[10px] lg:translate-x-25 lg:translate-y-2">
   <Image
     src="/img/extra-badge.png" 
     alt="Special Badge" 
-    className="w-auto h-auto object-contain drop-shadow-xl"
+    className="h-auto object-contain drop-shadow-xl w-[200px] lg:w-[350px]"
     width={350}
     height={350}
   />
