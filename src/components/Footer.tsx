@@ -15,11 +15,11 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-4">
               <div className="text-3xl font-bold text-white">
-                <span className="text-blue-400">Z</span>ent
+                <span className="text-blue-400">O</span>KIZ
               </div>
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
-              Unlocking a world of student discounts from thousands of stores online and in-store. Zent helps students save on what they need, want, and love.
+              Unlocking a world of student discounts from thousands of stores online and in-store. OKIZ helps students save on what they need, want, and love.
             </p>
             <div className="flex space-x-4 mb-8">
               <motion.a 
@@ -168,7 +168,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; {currentYear} Zent. All rights reserved. Developed by Zent Team.
+              &copy; {currentYear} OKIZ. All rights reserved. Developed by OKIZ Team.
             </p>
             <div className="flex space-x-6">
               <Link href="#" className="text-gray-500 hover:text-white text-sm">

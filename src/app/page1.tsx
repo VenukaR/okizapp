@@ -74,13 +74,13 @@
 //       name: "Emma Johnson",
 //       role: "CEO & Co-founder",
 //       image: "/vercel.svg", // Placeholder image
-//       bio: "Emma founded Zent with a vision to make student life more affordable and enjoyable."
+//       bio: "Emma founded OKIZ with a vision to make student life more affordable and enjoyable."
 //     },
 //     {
 //       name: "David Chen",
 //       role: "CTO & Co-founder",
 //       image: "/vercel.svg", // Placeholder image
-//       bio: "David oversees all technological innovations at Zent, ensuring students have a seamless experience."
+//       bio: "David oversees all technological innovations at OKIZ, ensuring students have a seamless experience."
 //     },
 //     {
 //       name: "Sarah Williams",
@@ -108,7 +108,7 @@
 //             animate="active"
 //           >
 //             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 dark:text-white mb-6">
-//               Zent: <span className="text-blue-600 dark:text-blue-400">Student Discounts</span> Reimagined
+//               OKIZ: <span className="text-blue-600 dark:text-blue-400">Student Discounts</span> Reimagined
 //             </h1>
 //             <p className="text-xl text-gray-700 dark:text-gray-200 max-w-3xl mx-auto">
 //               Our mission has been to empower students to thrive. Here to take the sting out of everyday life, we help you save money on what you need, what you want and what you love.
@@ -122,7 +122,7 @@
 //             transition={{ delay: 0.5, duration: 0.7 }}
 //           >
 //             <button className="px-8 py-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition shadow-lg text-lg font-semibold">
-//               Join Zent Today
+//               Join OKIZ Today
 //             </button>
 //           </motion.div>
 //         </div>
@@ -138,9 +138,9 @@
 //             viewport={{ once: true }}
 //             //variants={fadeInUp}
 //           >
-//             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Why Choose Zent?</h2>
+//             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Why Choose OKIZ?</h2>
 //             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-//               Unlocking a world of student discounts from thousands of stores online and in-store, Zent gives you access to more savings than any other platform.
+//               Unlocking a world of student discounts from thousands of stores online and in-store, OKIZ gives you access to more savings than any other platform.
 //             </p>
 //           </motion.div>
 
@@ -214,7 +214,7 @@
 //               <div className="w-full md:w-2/3">
 //                 <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">A Message from Our CEO</h2>
 //                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-//                   "At Zent, we believe every student deserves access to the best products and services at affordable prices. Our platform connects you with thousands of brands offering exclusive student discounts, helping you make the most of your college experience without breaking the bank."
+//                   "At OKIZ, we believe every student deserves access to the best products and services at affordable prices. Our platform connects you with thousands of brands offering exclusive student discounts, helping you make the most of your college experience without breaking the bank."
 //                 </p>
 //                 <p className="text-lg font-semibold text-gray-800 dark:text-white">
 //                   Emma Johnson, CEO & Co-founder
@@ -237,7 +237,7 @@
 //           >
 //             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Our Story</h2>
 //             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-//               Founded in 2020, Zent began with a simple idea: make student life more affordable. What started as a small project between college friends has grown into a platform serving millions of students across the country.
+//               Founded in 2020, OKIZ began with a simple idea: make student life more affordable. What started as a small project between college friends has grown into a platform serving millions of students across the country.
 //             </p>
 //           </motion.div>
 
@@ -326,7 +326,7 @@
 //           >
 //             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Meet Our Leadership Team</h2>
 //             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-//               The passionate individuals behind Zent who are committed to making student life more affordable.
+//               The passionate individuals behind OKIZ who are committed to making student life more affordable.
 //             </p>
 //           </motion.div>
 
@@ -377,7 +377,7 @@
 //             viewport={{ once: true }}
 //             //variants={fadeInUp}
 //           >
-//             <h2 className="text-3xl md:text-4xl font-bold mb-4">Zent by Numbers</h2>
+//             <h2 className="text-3xl md:text-4xl font-bold mb-4">OKIZ by Numbers</h2>
 //             <p className="text-lg max-w-2xl mx-auto">
 //               Our growing community of students and brands continues to make an impact.
 //             </p>
@@ -434,7 +434,7 @@
 //               viewport={{ once: true }}
 //               //variants={fadeInUp}
 //             >
-//               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Take Zent Everywhere You Go</h2>
+//               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Take OKIZ Everywhere You Go</h2>
 //               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
 //                 Download our mobile app to access student discounts anytime, anywhere. Get exclusive mobile-only offers and instant notifications for new deals from your favorite brands.
 //               </p>
@@ -457,7 +457,7 @@
 //               <div className="relative h-96 md:h-[500px]">
 //                 <Image
 //                   src="/file.svg" // Replace with actual app mockup image
-//                   alt="Zent Mobile App"
+//                   alt="OKIZ Mobile App"
 //                   layout="fill"
 //                   objectFit="contain"
 //                 />
@@ -478,10 +478,10 @@
 //           >
 //             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Saving?</h2>
 //             <p className="text-xl mb-8">
-//               Join millions of students already saving with Zent. Sign up today - it's free!
+//               Join millions of students already saving with OKIZ. Sign up today - it's free!
 //             </p>
 //             <button className="px-8 py-4 bg-white text-blue-600 rounded-md hover:bg-gray-100 transition shadow-lg text-lg font-semibold">
-//               Join Zent Today
+//               Join OKIZ Today
 //             </button>
 //           </motion.div>
 //         </div>

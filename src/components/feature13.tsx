@@ -22,7 +22,7 @@ const Feature13 = ({
       title: "Exclusive Discounts, Just for You",
       subtitle: "🎓 FOR STUDENTS",
       description:
-        "Verified university students in Sri Lanka get instant savings on food, clothing, books, tech, gyms, and more. Simply scan your Zent QR at checkout and enjoy up to 20% off.",
+        "Verified university students in Sri Lanka get instant savings on food, clothing, books, tech, gyms, and more. Simply scan your OKIZ QR at checkout and enjoy up to 20% off.",
       image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=300&fit=crop",
     },
     {
@@ -30,7 +30,7 @@ const Feature13 = ({
       title: "Reach Thousands of Loyal Customers",
       subtitle: "🛍️ FOR SHOPS",
       description:
-        "Local shops and brands can tap into Sri Lanka's 300,000+ university students with targeted, trackable promotions. Zent helps you attract repeat customers without wasting money on broad ads.",
+        "Local shops and brands can tap into Sri Lanka's 300,000+ university students with targeted, trackable promotions. OKIZ helps you attract repeat customers without wasting money on broad ads.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
     },
   ],

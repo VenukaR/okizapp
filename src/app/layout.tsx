@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Zent - Student Discounts & Deals",
+  title: "OKIZ - Student Discounts & Deals",
   description: "Empowering students to thrive with exclusive discounts from thousands of stores. Save on what you need, want, and love.",
   keywords: "student discounts, deals, savings, university, college, student deals",
 };

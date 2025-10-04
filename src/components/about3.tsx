@@ -165,18 +165,16 @@ const About3 = ({
   },
   secondaryImage = {
     src: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=400&h=400&fit=crop",
-    alt: "Zent logo",
+    alt: "OKIZ logo",
   },
   breakout = {
     src: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=100&h=100&fit=crop",
     alt: "logo",
     title: "Exclusive Student Discounts in Sri Lanka",
     description: "Helping students save more while giving shops a smarter way to grow their customer base.",
-    buttonText: "Discover Zent",
+    buttonText: "Discover OKIZ",
     buttonUrl: "#",
   },
-  companiesTitle = "Trusted by Leading Universities",
-  companies = defaultCompanies,
   achievementsTitle = "Our Impact in Numbers",
   achievementsDescription = "Building Sri Lanka's first student discount platform to empower students and help businesses grow.",
   achievements = defaultAchievements,
@@ -251,31 +249,6 @@ const About3 = ({
                 height={400}
               />
             </div>
-          </div>
-        </div>
-
-        {/* Companies Section */}
-        <div className="py-16 px-4 rounded-2xl bg-white shadow-lg mb-20">
-          <p className="text-center text-lg font-semibold text-gray-700 mb-10">{companiesTitle}</p>
-          <div className="flex flex-wrap justify-center items-center gap-12">
-            {companies.map((company, idx) => (
-              <div 
-                className="transition-all duration-700 ease-in-out transform-gpu hover:scale-110 cursor-pointer will-change-transform"
-                key={company.src + idx}
-                onMouseEnter={() => setHoveredCompany(idx)}
-                onMouseLeave={() => setHoveredCompany(null)}
-              >
-                <Image
-                  src={company.src}
-                  alt={company.alt}
-                  width={100}
-                  height={50}
-                  className={`h-16 md:h-20 w-auto object-contain transition-all duration-700 ease-in-out will-change-opacity ${
-                    hoveredCompany === idx ? 'opacity-100 filter-none' : 'opacity-60 grayscale'
-                  }`}
-                />
-              </div>
-            ))}
           </div>
         </div>
 

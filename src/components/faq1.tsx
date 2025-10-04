@@ -21,27 +21,27 @@ const Faq1 = ({
  items = [
   {
     id: "faq-1",
-    question: "What is Zent?",
+    question: "What is OKIZ?",
     answer:
-      "Zent is Sri Lanka’s first student discount platform. It connects verified university students with exclusive discounts at local shops and brands.",
+      "OKIZ is Sri Lanka’s first student discount platform. It connects verified university students with exclusive discounts at local shops and brands.",
   },
   {
     id: "faq-2",
     question: "How do students get discounts?",
     answer:
-      "Students sign up with their university ID to verify eligibility. At checkout, they simply scan their Zent QR code and the discount is applied instantly.",
+      "Students sign up with their university ID to verify eligibility. At checkout, they simply scan their OKIZ QR code and the discount is applied instantly.",
   },
   {
     id: "faq-3",
-    question: "Does Zent cost anything for students?",
+    question: "Does OKIZ cost anything for students?",
     answer:
-      "No. Zent is completely free for students. Our mission is to make student life more affordable.",
+      "No. OKIZ is completely free for students. Our mission is to make student life more affordable.",
   },
   {
     id: "faq-4",
-    question: "Why should shops join Zent?",
+    question: "Why should shops join OKIZ?",
     answer:
-      "By joining Zent, shops gain direct access to Sri Lanka’s 300,000+ university students. It’s a cost-effective way to drive footfall, build loyalty, and increase repeat sales.",
+      "By joining OKIZ, shops gain direct access to Sri Lanka’s 300,000+ university students. It’s a cost-effective way to drive footfall, build loyalty, and increase repeat sales.",
   },
   {
     id: "faq-5",
@@ -53,7 +53,7 @@ const Faq1 = ({
     id: "faq-6",
     question: "What types of discounts can be offered?",
     answer:
-      "Shops can offer flexible deals such as percentage discounts (e.g., 10% off), buy-one-get-one, or limited-time offers. Zent helps you customize and promote these offers to students.",
+      "Shops can offer flexible deals such as percentage discounts (e.g., 10% off), buy-one-get-one, or limited-time offers. OKIZ helps you customize and promote these offers to students.",
   },
   {
     id: "faq-7",

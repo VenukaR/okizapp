@@ -38,7 +38,7 @@ const Navbar = () => {
       href: '/shops',
       hasDropdown: true,
       dropdownItems: [
-        { name: 'Partner with Zent', href: '/shops#partner' },
+        { name: 'Partner with OKIZ', href: '/shops#partner' },
         { name: 'Offer Discounts', href: '/shops#offer' },
         { name: 'Reach Students', href: '/shops#reach' },
         { name: 'Track Results', href: '/shops#track' },
@@ -72,7 +72,7 @@ const Navbar = () => {
               transition={{ duration: 0.2 }}
             >
               <span className="bg-gradient-to-r from-primary-blue to-purple-600 bg-clip-text text-transparent">
-                Zent
+                Logo okiz
               </span>
             </motion.div>
           </Link>

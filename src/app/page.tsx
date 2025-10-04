@@ -5,6 +5,7 @@ import Cta11 from "@/components/cta11";
 import { Faq1 } from "@/components/faq1";
 import Feature13 from "@/components/feature13";
 import Hero47 from "@/components/hero47";
+import LoadingComponent from "@/components/loading";
 import Logos8 from "@/components/logos8";
 import Team1 from "@/components/team1";
 import { useState, useEffect } from "react";
@@ -18,7 +19,7 @@ export default function Home() {
   
   // Return a simpler initial UI if not mounted to avoid hydration mismatch
   if (!mounted) {
-    return <div className="px-4 md:px-8 lg:px-16">Loading...</div>;
+    return <div className=""><LoadingComponent /></div>;
   }
   return (
     <div >
