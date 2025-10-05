@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "resolutions": {
+    "which-collection": "1.0.1"
+  },
   "dependencies": {
     "@next/font": "^14.2.15",
     "@radix-ui/react-accordion": "^1.2.12",
