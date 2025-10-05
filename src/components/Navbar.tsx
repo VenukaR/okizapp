@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMenu, FiX, FiSun, FiMoon, FiChevronDown } from 'react-icons/fi';
 import { useTheme } from '@/contexts/ThemeContext';
+import Image from 'next/image';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +29,9 @@ const Navbar = () => {
       href: '/students',
       hasDropdown: true,
       dropdownItems: [
-        { name: 'Sign Up', href: '/students#signup' },
-        { name: 'Verify Status', href: '/students#verify' },
-        { name: 'Browse Discounts', href: '/students#browse' },
+        { name: 'Why Choose Us', href: '/students#why-choose-us' },
+        { name: 'How to Register', href: '/students#register' },
+        { name: 'View Shops', href: '/students#register' },
         { name: 'Start Saving', href: '/students#save' },
       ]
     },
@@ -71,9 +73,13 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <span className="bg-gradient-to-r from-primary-blue to-purple-600 bg-clip-text text-transparent">
-                Logo okiz
-              </span>
+              <Image 
+                src="/img/logo.png" 
+                alt="OKIZ" 
+                className="h-8 w-auto"
+                width={100}
+                height={100}
+              />
             </motion.div>
           </Link>
 

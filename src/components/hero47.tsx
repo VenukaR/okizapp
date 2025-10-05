@@ -76,14 +76,14 @@ const Hero47 = ({
 
             {/* Heading */}
             <h1 className="text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl xl:text-7xl leading-tight">
-              <span className="block mb-2">{heading}</span>
-              <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+              <span className="block mb-2 font-black">{heading}</span>
+              <span className="bg-gradient-to-r from-blue-900 to-primary-light bg-clip-text text-transparent font-black">
                 {subheading}
               </span>
             </h1>
 
             {/* Description */}
-            <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl">
+            <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl font-medium">
               {description}
             </p>
 

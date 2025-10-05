@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 interface About3Props {
@@ -122,32 +122,32 @@ const renderCountUpValue = (value: string) => {
   );
 };
 
-const defaultCompanies = [
-  {
-    src: "/img/unilogo/iit.png",
-    alt: "IIT",
-  },
-  {
-    src: "/img/unilogo/sliit.png",
-    alt: "SLIIT",
-  },
-  {
-    src: "/img/unilogo/uc.png",
-    alt: "University of Colombo",
-  },
-  {
-    src: "/img/unilogo/um.png",
-    alt: "University of Moratuwa",
-  },
-  {
-    src: "/img/unilogo/nsbm.png",
-    alt: "NSBM",
-  },
-  {
-    src: "/img/unilogo/nibm.png",
-    alt: "NIBM",
-  },
-];
+// const defaultCompanies = [
+//   {
+//     src: "/img/unilogo/iit.png",
+//     alt: "IIT",
+//   },
+//   {
+//     src: "/img/unilogo/sliit.png",
+//     alt: "SLIIT",
+//   },
+//   {
+//     src: "/img/unilogo/uc.png",
+//     alt: "University of Colombo",
+//   },
+//   {
+//     src: "/img/unilogo/um.png",
+//     alt: "University of Moratuwa",
+//   },
+//   {
+//     src: "/img/unilogo/nsbm.png",
+//     alt: "NSBM",
+//   },
+//   {
+//     src: "/img/unilogo/nibm.png",
+//     alt: "NIBM",
+//   },
+// ];
 
 const defaultAchievements = [
   { label: "Universities Reached", value: "01+" },
@@ -179,7 +179,7 @@ const About3 = ({
   achievementsDescription = "Building Sri Lanka's first student discount platform to empower students and help businesses grow.",
   achievements = defaultAchievements,
 }: About3Props = {}) => {
-  const [hoveredCompany, setHoveredCompany] = useState<number | null>(null);
+  // const [hoveredCompany, setHoveredCompany] = useState<number | null>(null);
 
   return (
     <section className="py-16 bg-gradient-to-b from-white via-blue-50/30 to-white">

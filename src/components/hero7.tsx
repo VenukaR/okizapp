@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import Image from "next/image";
+import { AnimatedLogoCarousel } from "./animated-logo-carousel";
 
 interface Hero7Props {
   heading?: string;
@@ -25,35 +26,35 @@ const Hero7 = ({
     text: "Check Your Eligibility",
     url: "#",
   },
-  reviews = {
-    count: 200,
-    rating: 5.0,
-    avatars: [
-      {
-        src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop",
-        alt: "Student 1",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
-        alt: "Student 2",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
-        alt: "Student 3",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
-        alt: "Student 4",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop",
-        alt: "Student 5",
-      },
-    ],
-  },
+  // reviews = {
+  //   count: 200,
+  //   rating: 5.0,
+  //   avatars: [
+  //     {
+  //       src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop",
+  //       alt: "Student 1",
+  //     },
+  //     {
+  //       src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+  //       alt: "Student 2",
+  //     },
+  //     {
+  //       src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
+  //       alt: "Student 3",
+  //     },
+  //     {
+  //       src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
+  //       alt: "Student 4",
+  //     },
+  //     {
+  //       src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop",
+  //       alt: "Student 5",
+  //     },
+  //   ],
+  // },
 }: Hero7Props) => {
   return (
-    <section className="relative py-10 md:py-22 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-100 w-full">
+    <section className="relative py-10 md:py-22 px-7 md:px-0 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-100 w-full">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Animated Orbs */}
@@ -147,7 +148,7 @@ const Hero7 = ({
           </svg>
         </a>
 
-        {/* Reviews Section */}
+        {/* Reviews Section
         <div className="mx-auto mt-12 flex w-fit flex-col items-center gap-6 sm:flex-row bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-blue-100">
           <span className="inline-flex items-center -space-x-4">
             {reviews.avatars.map((avatar, index) => (
@@ -178,6 +179,31 @@ const Hero7 = ({
               from {reviews.count}+ happy students
             </p>
           </div>
+        </div> */}
+        <div className="pb-10"></div>
+        <hr/>
+        <div className="mt-12">
+           <section className="py-8 md:py-12 lg:py-0 px-0 md:px-0 lg:px-0">
+        <AnimatedLogoCarousel 
+          title="Our Trusted Partners"
+          subtitle="Register Today to Enjoy Exclusive Discounts and Benefits!"
+          columnCount={6}
+          logos={[
+            { name: "Shop 1", logo: "/img/unilogo/iit.png" },
+            { name: "Shop 2", logo: "/img/unilogo/sliit.png" },
+            { name: "Shop 3", logo: "/img/unilogo/nsbm.png" },
+            { name: "Shop 4", logo: "/img/unilogo/uc.png" },
+            { name: "Shop 5", logo: "/img/unilogo/nibm.png" },
+            { name: "Shop 6", logo: "/img/unilogo/iit.png" },
+            { name: "Shop 7", logo: "/img/unilogo/sliit.png" },
+            { name: "Shop 8", logo: "/img/unilogo/nsbm.png" },
+            { name: "Shop 9", logo: "/img/unilogo/uc.png" },
+            { name: "Shop 10", logo: "/img/unilogo/nibm.png" },
+            { name: "Shop 11", logo: "/img/unilogo/iit.png" },
+            { name: "Shop 12", logo: "/img/unilogo/sliit.png" },
+          ]}
+        />
+      </section>
         </div>
       </div>
     </section>
