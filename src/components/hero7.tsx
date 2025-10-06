@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { AnimatedLogoCarousel } from "./animated-logo-carousel";
 
@@ -54,6 +54,26 @@ const Hero7 = ({
   //   ],
   // },
 }: Hero7Props) => {
+  const [columnCount, setColumnCount] = useState(6);
+
+  useEffect(() => {
+    const updateColumnCount = () => {
+      if (window.innerWidth < 768) {
+        setColumnCount(3); // Mobile: 3 columns
+      } else {
+        setColumnCount(6); // Desktop: 6 columns
+      }
+    };
+
+    // Set initial value
+    updateColumnCount();
+
+    // Add event listener
+    window.addEventListener('resize', updateColumnCount);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', updateColumnCount);
+  }, []);
   return (
     <section className="relative py-10 md:py-22 px-7 md:px-0 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-100 w-full">
       {/* Background Elements */}
@@ -312,7 +332,7 @@ const Hero7 = ({
         <AnimatedLogoCarousel 
           title="Our Trusted Partners"
           subtitle="Register Today to Enjoy Exclusive Discounts and Benefits!"
-          columnCount={6}
+          columnCount={columnCount}
           logos={[
             { name: "Pizza Hut", logo: "/img/shops/pizzahut.png" },
             { name: "Spa Ceylon", logo: "/img/shops/spaceylon.png" },
