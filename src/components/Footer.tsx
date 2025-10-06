@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaAppStore, FaGooglePlay } from 'react-icons/fa';
 
@@ -8,14 +9,21 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
+    <footer className="bg-primary-footer text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Branding & About */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-4">
-              <div className="text-3xl font-bold text-white">
-                <span className="text-blue-400">O</span>KIZ
+              <div className="flex items-center">
+                <Image
+                  src="/img/logo.png"
+                  alt="OKIZ Logo"
+                  width={70}
+                  height={70}
+                  className="mr-3"
+                />
+                
               </div>
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
@@ -26,7 +34,7 @@ const Footer = () => {
                 href="https://facebook.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors"
+                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary-dark transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -107,11 +115,10 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 { label: "Home", href: "/" },
-                { label: "About Us", href: "#about" },
+                { label: "About Us", href: "/#about" },
                 { label: "For Students", href: "/students" },
                 { label: "For Businesses", href: "/shops" },
                 { label: "Contact Us", href: "/contact" },
-                { label: "Blog", href: "#" },
               ].map((link, index) => (
                 <li key={index}>
                   <Link href={link.href} className="text-gray-400 hover:text-blue-400 transition-colors">
@@ -124,15 +131,14 @@ const Footer = () => {
 
           {/* Categories */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Discount Categories</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Student Services</h3>
             <ul className="space-y-3">
               {[
-                { label: "Fashion", href: "#" },
-                { label: "Technology", href: "#" },
-                { label: "Food & Drink", href: "#" },
-                { label: "Entertainment", href: "#" },
-                { label: "Travel", href: "#" },
-                { label: "Health & Fitness", href: "#" },
+                { label: "Student Discounts", href: "/students#discounts" },
+                { label: "How to Register", href: "/students#register" },
+                { label: "Download App", href: "/students#download" },
+                { label: "Why Choose Us", href: "/students#why-choose-us" },
+                { label: "University Partners", href: "/#universities" },
               ].map((category, index) => (
                 <li key={index}>
                   <Link href={category.href} className="text-gray-400 hover:text-blue-400 transition-colors">
@@ -145,15 +151,14 @@ const Footer = () => {
 
           {/* Support */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Help & Support</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Business Partners</h3>
             <ul className="space-y-3">
               {[
-                { label: "FAQ", href: "#" },
-                { label: "Student Verification", href: "#" },
-                { label: "How It Works", href: "#" },
-                { label: "Partner With Us", href: "#" },
-                { label: "Privacy Policy", href: "#" },
-                { label: "Terms of Service", href: "#" },
+                { label: "Get Started", href: "/shops#get-started" },
+                { label: "Partner Benefits", href: "/shops#partner" },
+                { label: "Pricing Plans", href: "/shops#pricing" },
+                { label: "Join Waitlist", href: "/shops#waitlist" },
+                { label: "Contact Sales", href: "/contact" },
               ].map((support, index) => (
                 <li key={index}>
                   <Link href={support.href} className="text-gray-400 hover:text-blue-400 transition-colors">

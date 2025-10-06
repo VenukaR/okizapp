@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { AnimatedLogoCarousel } from "./animated-logo-carousel";
 
 interface Hero7Props {
@@ -21,7 +22,7 @@ interface Hero7Props {
 
 const Hero7 = ({
   // heading = "Exclusive Student Discounts — Only for Sri Lankan Universities",
-  description = "Why pay full price when you're a student? OKIZ gives you access to exclusive deals and discounts across Sri Lanka — from food and fashion to books and gyms. Verified university students save more every day.",
+  description = "Why pay full price when you're a student? OKIZ gives you access to exclusive deals and discounts across Sri Lanka  from food and fashion to books and gyms. Verified university students save more every day.",
   button = {
     text: "Check Your Eligibility",
     url: "#",
@@ -58,39 +59,163 @@ const Hero7 = ({
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Animated Orbs */}
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
-        <div className="absolute top-1/2 -left-40 w-96 h-96 bg-blue-500 rounded-full blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
-        
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary rounded-full blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute top-1/2 -left-40 w-96 h-96 bg-primary-lightdark rounded-full blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+
         {/* Grid Pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'linear-gradient(to right, #3B82F6 1px, transparent 1px), linear-gradient(to bottom, #3B82F6 1px, transparent 1px)',
           backgroundSize: '60px 60px'
         }}></div>
 
-        {/* Floating Icons */}
-        <div className="absolute top-20 left-20 text-blue-400 opacity-30 animate-bounce" style={{ animationDuration: '3s' }}>
-          <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
-          </svg>
+        {/* Multiple Nut SVGs */}
+        <div className="absolute top-32 right-20 opacity-25 animate-pulse" style={{ animationDuration: '6s', animationDelay: '0.5s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={80} 
+            height={80}
+            className="text-primary filter drop-shadow-lg"
+          />
         </div>
-        <div className="absolute top-40 right-32 text-blue-500 opacity-30 animate-bounce" style={{ animationDuration: '4s', animationDelay: '1s' }}>
-          <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd"/>
-          </svg>
+
+        <div className="absolute top-20 left-16 opacity-20 animate-bounce" style={{ animationDuration: '4s', animationDelay: '1s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={64} 
+            height={64}
+            className="text-blue-500 filter drop-shadow-lg"
+          />
         </div>
-        <div className="absolute bottom-32 left-1/4 text-blue-600 opacity-30 animate-bounce" style={{ animationDuration: '5s', animationDelay: '2s' }}>
-          <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"/>
-            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clipRule="evenodd"/>
-          </svg>
+
+        <div className="absolute bottom-40 left-1/4 opacity-30 animate-pulse" style={{ animationDuration: '5s', animationDelay: '2s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={72} 
+            height={72}
+            className="text-primary-dark filter drop-shadow-lg"
+          />
+        </div>
+
+        <div className="absolute top-60 right-1/3 opacity-15 animate-bounce" style={{ animationDuration: '7s', animationDelay: '3s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={56} 
+            height={56}
+            className="text-blue-300 filter drop-shadow-lg"
+          />
+        </div>
+
+        <div className="absolute bottom-20 right-32 opacity-25 animate-pulse" style={{ animationDuration: '8s', animationDelay: '1.5s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={68} 
+            height={68}
+            className="text-blue-400 filter drop-shadow-lg"
+          />
+        </div>
+
+        <div className="absolute top-1/2 left-8 opacity-20 animate-bounce" style={{ animationDuration: '6s', animationDelay: '4s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={60} 
+            height={60}
+            className="text-blue-500 filter drop-shadow-lg"
+          />
+        </div>
+
+        {/* Additional Nuts */}
+        <div className="absolute bottom-60 right-16 opacity-18 animate-pulse" style={{ animationDuration: '9s', animationDelay: '2.5s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={52} 
+            height={52}
+            className="text-blue-300 filter drop-shadow-lg"
+          />
+        </div>
+
+        <div className="absolute top-44 left-1/3 opacity-22 animate-bounce" style={{ animationDuration: '5.5s', animationDelay: '3.5s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={58} 
+            height={58}
+            className="text-blue-500 filter drop-shadow-lg"
+          />
+        </div>
+
+        <div className="absolute bottom-28 left-12 opacity-16 animate-pulse" style={{ animationDuration: '7.5s', animationDelay: '5s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={48} 
+            height={48}
+            className="text-blue-400 filter drop-shadow-lg"
+          />
+        </div>
+
+        <div className="absolute top-72 right-1/4 opacity-20 animate-bounce" style={{ animationDuration: '6.5s', animationDelay: '1.8s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={62} 
+            height={62}
+            className="text-primary-dark filter drop-shadow-lg"
+          />
+        </div>
+
+        <div className="absolute top-36 right-1/2 opacity-14 animate-pulse" style={{ animationDuration: '10s', animationDelay: '4.5s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={44} 
+            height={44}
+            className="text-blue-300 filter drop-shadow-lg"
+          />
+        </div>
+
+        <div className="absolute bottom-52 left-1/2 opacity-24 animate-bounce" style={{ animationDuration: '8.5s', animationDelay: '6s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={66} 
+            height={66}
+            className="text-blue-500 filter drop-shadow-lg"
+          />
+        </div>
+
+        <div className="absolute top-16 right-40 opacity-17 animate-pulse" style={{ animationDuration: '4.5s', animationDelay: '0.8s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={50} 
+            height={50}
+            className="text-blue-400 filter drop-shadow-lg"
+          />
+        </div>
+
+        <div className="absolute bottom-12 right-1/3 opacity-19 animate-bounce" style={{ animationDuration: '7.2s', animationDelay: '3.2s' }}>
+          <Image 
+            src="/svg/nut.svg" 
+            alt="Nut" 
+            width={54} 
+            height={54}
+            className="text-primary-dark filter drop-shadow-lg"
+          />
         </div>
       </div>
 
       <div className="container relative z-10 text-center mx-auto">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-8">
           {/* Badge */}
-          <div className="mx-auto inline-block w-fit px-5 py-2.5 bg-blue-100 rounded-full border-2 border-blue-200 backdrop-blur-sm shadow-lg">
-            <p className="text-blue-700 text-sm md:text-base font-bold flex items-center gap-2">
+          <div className="mx-auto inline-block w-fit px-5 py-2.5 bg-white rounded-full border-2 border-blue-200 backdrop-blur-sm shadow-lg">
+            <p className="text-primary-dark text-sm md:text-base font-bold flex items-center gap-2">
               <span className="text-2xl">🎓</span>
               <span>Student-Only Benefits</span>
             </p>
@@ -98,10 +223,10 @@ const Hero7 = ({
 
           {/* Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight text-center">
-            <span className="block bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-2">
+            <span className="block bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent mb-2 font-black">
               Exclusive Student Discounts
             </span>
-            <span className="block text-gray-800 text-3xl md:text-4xl lg:text-5xl">
+            <span className="block text-gray-800 text-3xl md:text-4xl lg:text-5xl font-black">
               Only for Sri Lankan Universities
             </span>
           </h1>
@@ -135,7 +260,7 @@ const Hero7 = ({
         {/* CTA Button */}
         <a
           href={button.url}
-          className="group inline-flex items-center justify-center px-10 py-5 mt-10 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-lg font-bold rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-xl"
+          className="group inline-flex items-center justify-center px-10 py-5 mt-10 bg-gradient-to-r from-primary-lightdark to-primary-dark text-white text-lg font-bold rounded-xl hover:from-primary hover:to-primary-verydark transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-xl"
         >
           <span>{button.text}</span>
           <svg 
@@ -189,18 +314,16 @@ const Hero7 = ({
           subtitle="Register Today to Enjoy Exclusive Discounts and Benefits!"
           columnCount={6}
           logos={[
-            { name: "Shop 1", logo: "/img/unilogo/iit.png" },
-            { name: "Shop 2", logo: "/img/unilogo/sliit.png" },
-            { name: "Shop 3", logo: "/img/unilogo/nsbm.png" },
-            { name: "Shop 4", logo: "/img/unilogo/uc.png" },
-            { name: "Shop 5", logo: "/img/unilogo/nibm.png" },
-            { name: "Shop 6", logo: "/img/unilogo/iit.png" },
-            { name: "Shop 7", logo: "/img/unilogo/sliit.png" },
-            { name: "Shop 8", logo: "/img/unilogo/nsbm.png" },
-            { name: "Shop 9", logo: "/img/unilogo/uc.png" },
-            { name: "Shop 10", logo: "/img/unilogo/nibm.png" },
-            { name: "Shop 11", logo: "/img/unilogo/iit.png" },
-            { name: "Shop 12", logo: "/img/unilogo/sliit.png" },
+            { name: "Pizza Hut", logo: "/img/shops/pizzahut.png" },
+            { name: "Spa Ceylon", logo: "/img/shops/spaceylon.png" },
+            { name: "Caravan Fresh", logo: "/img/shops/caravanfresh.png" },
+            { name: "Tea Avenue", logo: "/img/shops/teaavenue.png" },
+            { name: "Bin Chun", logo: "/img/shops/binchun.png" },
+            { name: "7-Eleven", logo: "/img/shops/sevenseven.png" },
+            { name: "Barista", logo: "/img/shops/barista.png" },
+            { name: "Java Lounge", logo: "/img/shops/java.png" },
+            { name: "No Limit", logo: "/img/shops/nolimit.png" },
+            { name: "Burger King", logo: "/img/shops/bk.png" },
           ]}
         />
       </section>

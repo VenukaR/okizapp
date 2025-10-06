@@ -41,7 +41,7 @@
 //   const categories = [
 //     {
 //       name: 'Outfit',
-//       icon: <FaTshirt className="text-6xl text-blue-600 dark:text-blue-400" />,
+//       icon: <FaTshirt className="text-6xl text-primary-dark dark:text-blue-400" />,
 //       description: 'Get discounts on stylish clothes from your favorite brands.',
 //     },
 //     {
@@ -108,7 +108,7 @@
 //             animate="active"
 //           >
 //             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 dark:text-white mb-6">
-//               OKIZ: <span className="text-blue-600 dark:text-blue-400">Student Discounts</span> Reimagined
+//               OKIZ: <span className="text-primary-dark dark:text-blue-400">Student Discounts</span> Reimagined
 //             </h1>
 //             <p className="text-xl text-gray-700 dark:text-gray-200 max-w-3xl mx-auto">
 //               Our mission has been to empower students to thrive. Here to take the sting out of everyday life, we help you save money on what you need, what you want and what you love.
@@ -121,7 +121,7 @@
 //             animate={{ opacity: 1, y: 0 }}
 //             transition={{ delay: 0.5, duration: 0.7 }}
 //           >
-//             <button className="px-8 py-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition shadow-lg text-lg font-semibold">
+//             <button className="px-8 py-4 bg-primary-dark text-white rounded-md hover:bg-blue-700 transition shadow-lg text-lg font-semibold">
 //               Join OKIZ Today
 //             </button>
 //           </motion.div>
@@ -257,7 +257,7 @@
 //               }}
 //             >
 //               <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 dark:bg-blue-900 mb-4 mx-auto">
-//                 <FaUsers className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+//                 <FaUsers className="h-8 w-8 text-primary-dark dark:text-blue-400" />
 //               </div>
 //               <h3 className="text-xl font-semibold text-gray-800 dark:text-white text-center mb-2">The Beginning</h3>
 //               <p className="text-gray-600 dark:text-gray-300 text-center">
@@ -358,7 +358,7 @@
 //                 </div>
 //                 <div className="p-6">
 //                   <h3 className="text-xl font-bold text-gray-800 dark:text-white">{leader.name}</h3>
-//                   <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.role}</p>
+//                   <p className="text-primary-dark dark:text-blue-400 mb-4">{leader.role}</p>
 //                   <p className="text-gray-600 dark:text-gray-300">{leader.bio}</p>
 //                 </div>
 //               </motion.div>
@@ -368,7 +368,7 @@
 //       </section>
 
 //       {/* Stats Section */}
-//       <section className="py-20 px-4 bg-blue-600 dark:bg-blue-800 text-white">
+//       <section className="py-20 px-4 bg-primary-dark dark:bg-blue-800 text-white">
 //         <div className="max-w-6xl mx-auto">
 //           <motion.div 
 //             className="text-center mb-16"
@@ -468,7 +468,7 @@
 //       </section>
 
 //       {/* Call to Action */}
-//       <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-800 dark:to-indigo-800 text-white">
+//       <section className="py-16 px-4 bg-gradient-to-r from-primary-dark to-indigo-600 dark:from-blue-800 dark:to-indigo-800 text-white">
 //         <div className="max-w-4xl mx-auto text-center">
 //           <motion.div
 //             initial="hidden"
@@ -480,7 +480,7 @@
 //             <p className="text-xl mb-8">
 //               Join millions of students already saving with OKIZ. Sign up today - it's free!
 //             </p>
-//             <button className="px-8 py-4 bg-white text-blue-600 rounded-md hover:bg-gray-100 transition shadow-lg text-lg font-semibold">
+//             <button className="px-8 py-4 bg-white text-primary-dark rounded-md hover:bg-gray-100 transition shadow-lg text-lg font-semibold">
 //               Join OKIZ Today
 //             </button>
 //           </motion.div>

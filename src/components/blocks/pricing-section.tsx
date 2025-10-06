@@ -37,14 +37,14 @@ function PricingSection({ tiers, className }: PricingSectionProps) {
       "h-12 bg-white dark:bg-zinc-900",
       "hover:bg-zinc-50 dark:hover:bg-zinc-800",
       "text-zinc-900 dark:text-zinc-100",
-      "border border-zinc-200 dark:border-zinc-800",
+      "border border-primary dark:border-zinc-800",
       "hover:border-zinc-300 dark:hover:border-zinc-700",
       "shadow-sm hover:shadow-md",
       "text-sm font-medium",
     ),
     highlight: cn(
-      "h-12 bg-zinc-900 dark:bg-zinc-100",
-      "hover:bg-zinc-800 dark:hover:bg-zinc-300",
+      "h-12 bg-primary dark:bg-primary-dark",
+      "hover:bg-primary-dark dark:hover:bg-zinc-300",
       "text-white dark:text-zinc-900",
       "shadow-[0_1px_15px_rgba(0,0,0,0.1)]",
       "hover:shadow-[0_1px_20px_rgba(0,0,0,0.15)]",
@@ -54,7 +54,7 @@ function PricingSection({ tiers, className }: PricingSectionProps) {
 
   const badgeStyles = cn(
     "px-4 py-1.5 text-sm font-medium",
-    "bg-zinc-900 dark:bg-zinc-100",
+    "bg-primary dark:bg-zinc-100",
     "text-white dark:text-zinc-900",
     "border-none shadow-lg",
   )

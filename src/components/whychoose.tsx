@@ -6,7 +6,7 @@ export default function WhyChooseUs() {
       title: "Performance",
       description:
         "Fast, reliable, and optimized — Okiz ensures every interaction is smooth, saving students time and effort.",
-      icon: <Clock className="w-6 h-6 text-blue-600" />,
+      icon: <Clock className="w-6 h-6 text-primary-dark" />,
       color: "from-blue-50 to-blue-100",
       border: "border-blue-200",
     },

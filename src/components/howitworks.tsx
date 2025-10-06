@@ -1,6 +1,8 @@
 "use client"
 import React, { useState } from 'react';
-
+import Image from 'next/image';
+ import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+ 
 const HowToRegister = () => {
   const [activeStep, setActiveStep] = useState(0);
 
@@ -9,28 +11,28 @@ const HowToRegister = () => {
       number: "01",
       title: "Download the App",
       description: "Get OKIZ from Play Store or App Store and install it on your device",
-      mockup: "/img/phone-step1.png",
+      mockup: "/img/howtouse/1.png",
       showButtons: true,
     },
     {
       number: "02",
       title: "Sign Up with University ID",
       description: "Register using your valid university email address for instant verification",
-      mockup: "/img/phone-step2.png",
+      mockup: "/img/howtouse/1.png",
       showButtons: false,
     },
     {
       number: "03",
       title: "Verify OTP",
       description: "Check your university email for the verification code and confirm your account",
-      mockup: "/img/phone-step3.png",
+      mockup: "/img/howtouse/1.png",
       showButtons: false,
     },
     {
       number: "04",
       title: "Start Saving!",
       description: "Browse exclusive discounts and start saving at your favorite stores",
-      mockup: "/img/phone-step4.png",
+      mockup: "/img/howtouse/1.png",
       showButtons: false,
     },
   ];
@@ -40,7 +42,7 @@ const HowToRegister = () => {
       <div className="container max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full mb-6 border border-blue-100">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-primary rounded-full mb-6 border border-blue-100">
             <span className="font-semibold text-sm">Simple Process</span>
           </div>
           
@@ -64,32 +66,33 @@ const HowToRegister = () => {
               {/* Card */}
               <div className={`relative bg-white rounded-2xl p-6 border-2 transition-all duration-300 ease-out ${
                 activeStep === index 
-                  ? 'border-blue-500 shadow-xl shadow-blue-100' 
+                  ? 'border-primary shadow-xl shadow-blue-100' 
                   : 'border-gray-200 hover:border-blue-300 hover:shadow-lg'
               }`}>
                 
                 {/* Step Number */}
                 <div className={`inline-flex items-center justify-center w-10 h-10 rounded-xl font-bold text-sm mb-4 transition-all duration-300 ease-out ${
                   activeStep === index 
-                    ? 'bg-blue-600 text-white scale-110' 
-                    : 'bg-gray-100 text-gray-600 group-hover:bg-blue-50 group-hover:text-blue-600'
+                    ? 'bg-primary text-white scale-110' 
+                    : 'bg-gray-100 text-gray-600 group-hover:bg-blue-50 group-hover:text-primary-dark'
                 }`}>
                   {step.number}
                 </div>
 
                 {/* Phone Mockup */}
-                <div className="relative w-32 h-64 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-blue-50 to-gray-50 flex items-center justify-center overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
-                  <div className="text-gray-400 text-xs text-center px-4">
-                    <svg className="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                    </svg>
-                    App Preview
-                  </div>
+                <div className="relative w-auto h-60 mx-auto mb-6 rounded-2xl overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
+                   <Image
+                    src={step.mockup}
+                    alt={`Step ${step.number} Mockup`}
+                    fill
+                    style={{ objectFit: 'contain' }}
+                    className="transition-transform duration-300 ease-out group-hover:scale-125 scale-110 "
+                  />
                 </div>
 
                 {/* Content */}
                 <h3 className={`text-lg font-bold mb-2 transition-colors duration-300 ease-out ${
-                  activeStep === index ? 'text-blue-600' : 'text-gray-900'
+                  activeStep === index ? 'text-primary-dark' : 'text-gray-900'
                 }`}>
                   {step.title}
                 </h3>
@@ -128,35 +131,48 @@ const HowToRegister = () => {
                   </div>
                 )}
 
-                {/* Active Indicator */}
-                <div className={`absolute bottom-0 left-0 right-0 h-1 bg-blue-600 rounded-b-2xl transition-all duration-300 ease-out ${
-                  activeStep === index ? 'opacity-100' : 'opacity-0'
-                }`}></div>
               </div>
             </div>
           ))}
         </div>
 
         {/* Bottom CTA */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 md:p-10 shadow-xl">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="text-white text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl font-bold mb-2">Ready to start saving?</h3>
-                <p className="text-blue-100">Join 300,000+ students using OKIZ</p>
-              </div>
-              <a
-                href="#"
-                className="whitespace-nowrap px-8 py-4 bg-white text-blue-600 font-bold rounded-xl transition-all duration-300 ease-out hover:bg-blue-50 hover:scale-105 shadow-lg flex items-center gap-2"
-              >
-                <span>Get Started</span>
-                <svg className="w-5 h-5 transition-transform duration-300 ease-out group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
+     
+
+<div className="max-w-4xl mx-auto">
+  <div className="bg-gradient-to-r from-primary-dark to-blue-700 rounded-2xl p-8 md:p-10 shadow-xl">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="text-white text-center md:text-left">
+        <h3 className="text-2xl md:text-3xl font-bold mb-2">Join Our Socials</h3>
+        <p className="text-blue-100">Stay updated with the latest offers and news from OKIZ</p>
+      </div>
+      <div className="flex items-center gap-6">
+        {/* Instagram */}
+        <a
+          href="#"
+          className="text-white text-2xl p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-110 shadow-lg"
+        >
+          <FaInstagram />
+        </a>
+        {/* Facebook */}
+        <a
+          href="#"
+          className="text-white text-2xl p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-110 shadow-lg"
+        >
+          <FaFacebookF />
+        </a>
+        {/* WhatsApp */}
+        <a
+          href="#"
+          className="text-white text-2xl p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-110 shadow-lg"
+        >
+          <FaWhatsapp />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   );

@@ -3,8 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiMenu, FiX, FiSun, FiMoon, FiChevronDown } from 'react-icons/fi';
-import { useTheme } from '@/contexts/ThemeContext';
+import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 import Image from 'next/image';
 
 
@@ -12,7 +11,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const { theme, toggleTheme } = useTheme();
+  // const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,10 +39,10 @@ const Navbar = () => {
       href: '/shops',
       hasDropdown: true,
       dropdownItems: [
-        { name: 'Partner with OKIZ', href: '/shops#partner' },
-        { name: 'Offer Discounts', href: '/shops#offer' },
-        { name: 'Reach Students', href: '/shops#reach' },
-        { name: 'Track Results', href: '/shops#track' },
+        { name: 'Partner with OKIZ', href: '/shops#get-started' },
+        { name: 'Why Partner with OKIZ', href: '/shops#partner' },
+        { name: 'Pricing', href: '/shops#pricing' },
+        { name: 'Join the Waitlist', href: '/shops#waitlist' },
       ]
     },
     {
@@ -132,27 +131,27 @@ const Navbar = () => {
             ))}
 
             {/* Theme Toggle */}
-            <motion.button
+            {/* <motion.button
               onClick={toggleTheme}
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
               {theme === 'light' ? <FiMoon className="w-5 h-5" /> : <FiSun className="w-5 h-5" />}
-            </motion.button>
+            </motion.button> */}
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-2">
             {/* Mobile Theme Toggle */}
-            <motion.button
+            {/* <motion.button
               onClick={toggleTheme}
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
               {theme === 'light' ? <FiMoon className="w-5 h-5" /> : <FiSun className="w-5 h-5" />}
-            </motion.button>
+            </motion.button> */}
 
             <motion.button
               onClick={() => setIsOpen(!isOpen)}

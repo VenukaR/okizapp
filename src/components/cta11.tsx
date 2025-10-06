@@ -17,7 +17,7 @@ const Cta11 = ({
   return (
     <section className="py-20 overflow-hidden">
       <div className="container max-w-7xl mx-auto px-4">
-        <div className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl overflow-hidden shadow-2xl">
+        <div className="relative bg-gradient-to-br from-primary via-primary-lightdark to-primary-dark rounded-3xl overflow-hidden shadow-2xl">
           {/* Animated Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
@@ -33,8 +33,8 @@ const Cta11 = ({
           <div className="relative flex flex-col lg:flex-row gap-12 p-8 md:p-12 lg:p-16 items-center">
             {/* Content Section */}
             <div className="flex-1 z-10">
-              <div className="inline-block mb-4 px-4 py-2 bg-blue-500/30 backdrop-blur-sm rounded-full border border-blue-400/50">
-                <p className="text-blue-100 text-sm font-semibold">🚀 Get Started Today</p>
+              <div className="inline-block mb-4 px-4 py-2 bg-white backdrop-blur-sm rounded-full border border-blue-400/50">
+                <p className="text-primary text-sm font-semibold">🚀 Get Started Today</p>
               </div>
               
               <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
@@ -49,7 +49,7 @@ const Cta11 = ({
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="/signup-student"
-                  className="group inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+                  className="group inline-flex items-center justify-center px-8 py-4 bg-white text-primary-dark font-bold rounded-xl hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
                 >
                   <span className="mr-2">🎓</span>
                   <span>I&apos;m a Student</span>
@@ -65,7 +65,7 @@ const Cta11 = ({
                 
                 <a
                   href="/partner-shop"
-                  className="group inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-bold rounded-xl border-2 border-white/50 hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl backdrop-blur-sm"
+                  className="group inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-bold rounded-xl border-2 border-white/50 hover:bg-white hover:text-primary-dark transition-all duration-300 transform hover:scale-105 hover:shadow-2xl backdrop-blur-sm"
                 >
                   <span className="mr-2">🛍️</span>
                   <span>I&apos;m a Shop</span>
@@ -118,7 +118,7 @@ const Cta11 = ({
                     height={400}
                   />
                   {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-600/40 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/40 to-transparent"></div>
                   
                   {/* Stats Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent backdrop-blur-sm">
@@ -136,7 +136,7 @@ const Cta11 = ({
                 </div>
 
                 {/* Floating badge */}
-                <div className="absolute -top-4 -right-4 bg-white text-blue-600 px-4 py-2 rounded-full shadow-lg font-bold text-sm transform rotate-12 group-hover:rotate-0 transition-transform duration-500">
+                <div className="absolute -top-4 -right-4 bg-white text-primary-dark px-4 py-2 rounded-full shadow-lg font-bold text-sm transform rotate-12 group-hover:rotate-0 transition-transform duration-500">
                   Join Now! 🎉
                 </div>
               </div>

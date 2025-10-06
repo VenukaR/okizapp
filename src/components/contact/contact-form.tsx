@@ -61,7 +61,7 @@ export function ContactForm() {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto bg-white dark:bg-zinc-900 rounded-2xl shadow-xl overflow-hidden">
+    <div className="w-full max-w-2xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
       <div className="p-8 md:p-10">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
           Get in touch
@@ -161,14 +161,14 @@ export function ContactForm() {
               placeholder="How can we help you?"
               required
               rows={5}
-              className="w-full min-h-[120px] rounded-md border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:text-white"
+              className="w-full min-h-[120px] rounded-md border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary dark:text-white"
             />
           </div>
           
           <div>
             <Button 
               type="submit" 
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 rounded-lg font-medium text-base"
+              className="w-full bg-primary hover:bg-primary-dark text-white py-6 rounded-lg font-medium text-base"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Sending..." : "Send Message"}
