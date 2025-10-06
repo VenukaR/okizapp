@@ -12,7 +12,7 @@ export function ContactInfo() {
       <div className="space-y-8">
         <div className="flex items-start">
           <div className="flex-shrink-0 bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg">
-            <MapPin className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+            <MapPin className="h-6 w-6 text-primary-dark dark:text-blue-400" />
           </div>
           <div className="ml-4">
             <h3 className="text-lg font-medium text-gray-900 dark:text-white">Our Office</h3>
@@ -26,7 +26,7 @@ export function ContactInfo() {
         
         <div className="flex items-start">
           <div className="flex-shrink-0 bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg">
-            <Phone className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+            <Phone className="h-6 w-6 text-primary-dark dark:text-blue-400" />
           </div>
           <div className="ml-4">
             <h3 className="text-lg font-medium text-gray-900 dark:text-white">Call Us</h3>
@@ -39,7 +39,7 @@ export function ContactInfo() {
         
         <div className="flex items-start">
           <div className="flex-shrink-0 bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg">
-            <Mail className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+            <Mail className="h-6 w-6 text-primary-dark dark:text-blue-400" />
           </div>
           <div className="ml-4">
             <h3 className="text-lg font-medium text-gray-900 dark:text-white">Email Us</h3>

@@ -54,7 +54,7 @@ const Download1 = ({
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h2 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent">
             {heading}
           </h2>
           <p className="text-gray-600 mx-auto mb-8 max-w-2xl text-lg">
@@ -66,7 +66,7 @@ const Download1 = ({
         <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2 place-items-center">
           {/* iOS Card */}
           <motion.div
-            className="relative overflow-hidden rounded-3xl bg-white p-8 shadow-md transition hover:shadow-xl w-full"
+            className="relative overflow-hidden rounded-3xl bg-white p-8 shadow-md transition-all duration-300 hover:shadow-2xl hover:shadow-primary-light/30 w-full"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
@@ -75,10 +75,10 @@ const Download1 = ({
             {/* Background Shape */}
               <div className="absolute -bottom-10 -left-10 h-32 w-32 rotate-45 bg-blue-100 opacity-50 blur-xl" />
               <div className="relative z-10">
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-blue-600">
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-primary-dark">
                 <Smartphone className="h-7 w-7" />
               </div>
-              <p className="mb-1 text-sm text-blue-600 font-medium">
+              <p className="mb-1 text-sm text-primary font-medium">
                 {platforms.ios?.title}
               </p>
               <h3 className="mb-3 text-2xl font-bold">
@@ -95,6 +95,8 @@ const Download1 = ({
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/badges/appstore.png"
                   alt="Download on the App Store"
                   className="h-11"
+                  width={135}
+                  height={40}
                 />
               </a>
             </div>
@@ -102,7 +104,7 @@ const Download1 = ({
 
           {/* Android Card */}
           <motion.div
-            className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 to-blue-500 p-[2px] shadow-md transition hover:shadow-xl"
+            className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary-light to-primary p-[2px] shadow-md transition-all duration-300 hover:shadow-2xl hover:shadow-primary-light/30"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
@@ -112,10 +114,10 @@ const Download1 = ({
               {/* Angular Shape Accent */}
               <div className="absolute -bottom-10 -left-10 h-32 w-32 rotate-45 bg-blue-100 opacity-50 blur-xl" />
               <div className="relative z-10">
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-blue-600 text-white shadow-md">
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary-dark text-white shadow-md">
                   <Tablet className="h-7 w-7" />
                 </div>
-                <p className="mb-1 text-sm text-blue-600 font-medium">
+                <p className="mb-1 text-sm text-primary font-medium">
                   {platforms.android?.title}
                 </p>
                 <h3 className="mb-3 text-2xl font-bold">
@@ -132,6 +134,8 @@ const Download1 = ({
                     src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/badges/googleplay.png"
                     alt="Download on Google Play"
                     className="h-11"
+                    width={135}
+                    height={40}
                   />
                 </a>
               </div>

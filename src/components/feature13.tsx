@@ -36,19 +36,19 @@ const Feature13 = ({
   ],
 }: Feature13Props) => {
   return (
-    <section className="py-16 bg-gradient-to-b from-blue-50 to-white rounded-3xl">
+    <section className="py-16 bg-gradient-to-b from-primary-transparent/30 to-white rounded-3xl">
       <div className="container max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-bold lg:text-5xl text-center bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-4">
+        <h2 className="text-4xl font-bold lg:text-5xl text-center bg-gradient-to-r from-primary-dark to-blue-800 bg-clip-text text-transparent mb-4">
           {heading}
         </h2>
-        <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mb-16 rounded-2xl"></div>
+        <div className="h-1 w-24 bg-gradient-to-r from-primary-lightdark to-primary-dark mx-auto mb-16 rounded-2xl"></div>
         
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
           {features.map((feature, index) => {
             const href = feature.id === "feature-1" ? "/students" : feature.id === "feature-2" ? "/shops" : "/";
             const gradientClass = index === 0 
-              ? "from-blue-500 to-blue-600" 
-              : "from-blue-600 to-blue-700";
+              ? "from-blue-500 to-primary-dark" 
+              : "from-primary-dark to-blue-700";
 
             return (
               <a
@@ -59,10 +59,10 @@ const Feature13 = ({
                 <div className="h-full flex flex-col rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-500 overflow-hidden border border-blue-100">
                   <div className="flex justify-between gap-6 border-b border-blue-100">
                     <div className="flex flex-col justify-between gap-6 py-8 pl-6 md:py-10 md:pl-10 lg:justify-normal flex-1">
-                      <span className="inline-block text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full w-fit">
+                      <span className="inline-block text-sm font-semibold text-primary-dark bg-blue-50 px-3 py-1 rounded-full w-fit">
                         {feature.subtitle}
                       </span>
-                      <h3 className="text-2xl md:text-3xl font-bold text-gray-800 leading-tight group-hover:text-blue-600 transition-colors duration-300">
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-800 leading-tight group-hover:text-primary-dark transition-colors duration-300">
                         {feature.title}
                       </h3>
                     </div>
@@ -81,7 +81,7 @@ const Feature13 = ({
                     <p className="text-gray-600 leading-relaxed">
                       {feature.description}
                     </p>
-                    <div className="mt-6 flex items-center text-blue-600 font-semibold group-hover:gap-3 gap-2 transition-all duration-300">
+                    <div className="mt-6 flex items-center text-primary-dark font-semibold group-hover:gap-3 gap-2 transition-all duration-300">
                       <span>Learn More</span>
                       <svg 
                         className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" 

@@ -183,22 +183,22 @@ export default function ShopsPage() {
 
   return (
     <div >
-      <section className="py-8 md:py-12 lg:py-0 justify-center ">
+      <section className="py-8 md:py-12 lg:py-0 justify-center" id="get-started"> 
         <Hero243/>
       </section>  
       <section className="py-8 md:py-12 lg:py-0 w-full flex flex-col items-center">
         <Logos3 />
       </section>    
-      <section className="py-8 md:py-12 lg:py-0 ">
+      <section className="py-8 md:py-12 lg:py-0" id="partner">
         <FeatureStepsDemo />
       </section>
       <section className="py-8 md:py-12 lg:py-0 ">
         <ShopOwnersDash />
       </section>
-      <section className="py-0 md:py-12 lg:py-0 px-4 md:px-8 lg:px-16">
+      <section className="py-0 md:py-12 lg:py-0 px-4 md:px-8 lg:px-16" id="pricing">
         <PricingSection tiers={pricingTiers} />
-        </section>
-      <section className="py-8 md:py-12 lg:py-0 w-full flex flex-col items-center">
+      </section>
+      <section className="py-8 md:py-12 lg:py-0 w-full  items-center" id="waitlist">
         <Waitlist1/>
         </section>
     </div>

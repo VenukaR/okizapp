@@ -21,52 +21,52 @@ const Team1 = ({
   members = [
     {
       id: "member-1",
-      name: "Sarah Chen",
+      name: "Dimal Chandrawansha",
       role: "CEO & Founder",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+      avatar: "/img/team/dimal.jpeg",
     },
     {
       id: "member-2",
-      name: "Marcus Rodriguez",
+      name: "Dimal Chandrawansha",
       role: "CTO",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      avatar: "/img/team/dimal.jpeg",
     },
     {
       id: "member-3",
-      name: "Emily Watson",
+      name: "Dimal Chandrawansha",
       role: "Head of Design",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+      avatar: "/img/team/dimal.jpeg",
     },
     {
       id: "member-4",
-      name: "David Kim",
+      name: "Dimal Chandrawansha",
       role: "Lead Engineer",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+      avatar: "/img/team/dimal.jpeg",
     },
     {
       id: "member-5",
-      name: "Lisa Thompson",
+      name: "Dimal Chandrawansha",
       role: "Product Manager",
-      avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop",
+      avatar: "/img/team/dimal.jpeg",
     },
     {
       id: "member-6",
-      name: "Alex Johnson",
+      name: "Dimal Chandrawansha",
       role: "UX Designer",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+      avatar: "/img/team/dimal.jpeg",
     },
-    {
-      id: "member-7",
-      name: "Sophia Martinez",
-      role: "Marketing Director",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
-    },
-    {
-      id: "member-8",
-      name: "James Wilson",
-      role: "Sales Lead",
-      avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
-    },
+    // {
+    //   id: "member-7",
+    //   name: "Sophia Martinez",
+    //   role: "Marketing Director",
+    //   avatar: "/img/team/dimal.jpeg",
+    // },
+    // {
+    //   id: "member-8",
+    //   name: "James Wilson",
+    //   role: "Sales Lead",
+    //   avatar: "/img/team/dimal.jpeg",
+    // },
   ],
 }: Team1Props) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -90,10 +90,10 @@ const Team1 = ({
       <div className="container max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent mb-4">
             {heading}
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-6"></div>
+          <div className="h-1 w-24 bg-gradient-to-r from-primary-lightdark to-primary-dark rounded-full mb-6"></div>
           <p className="text-gray-600 text-lg max-w-3xl leading-relaxed">
             {description}
           </p>
@@ -103,7 +103,7 @@ const Team1 = ({
         <div className="flex justify-center gap-4 mb-8">
           <button
             onClick={() => scroll('left')}
-            className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl border border-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110"
+            className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl border border-blue-100 text-primary-dark hover:bg-primary-lightdark hover:text-white transition-all duration-300 transform hover:scale-110"
             aria-label="Scroll left"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -112,7 +112,7 @@ const Team1 = ({
           </button>
           <button
             onClick={() => scroll('right')}
-            className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl border border-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110"
+            className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl border border-blue-100 text-primary-dark hover:bg-primary-lightdark hover:text-white transition-all duration-300 transform hover:scale-110"
             aria-label="Scroll right"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,11 +148,11 @@ const Team1 = ({
                     />
                   </div>
                   {/* Overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-4">
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-4">
                     <div className="flex gap-3">
                       <a 
                         href="#" 
-                        className="p-2 bg-white rounded-full text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110"
+                        className="p-2 bg-white rounded-full text-primary-dark hover:bg-primary-dark hover:text-white transition-all duration-300 transform hover:scale-110"
                         aria-label="LinkedIn"
                       >
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -161,7 +161,7 @@ const Team1 = ({
                       </a>
                       <a 
                         href="#" 
-                        className="p-2 bg-white rounded-full text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110"
+                        className="p-2 bg-white rounded-full text-primary-dark hover:bg-primary-dark hover:text-white transition-all duration-300 transform hover:scale-110"
                         aria-label="Twitter"
                       >
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -174,10 +174,10 @@ const Team1 = ({
 
                 {/* Member Info */}
                 <div className="text-center">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary-dark transition-colors duration-300">
                     {member.name}
                   </h3>
-                  <p className="text-blue-600 font-medium text-sm bg-blue-50 inline-block px-4 py-1 rounded-full">
+                  <p className="text-primary font-medium text-sm bg-blue-50 inline-block px-4 py-1 rounded-full">
                     {member.role}
                   </p>
                 </div>
@@ -191,7 +191,7 @@ const Team1 = ({
           {Array.from({ length: Math.ceil(members.length / 3) }).map((_, idx) => (
             <div 
               key={idx}
-              className="w-2 h-2 rounded-full bg-blue-200 hover:bg-blue-600 transition-colors duration-300 cursor-pointer"
+              className="w-2 h-2 rounded-full bg-blue-200 hover:bg-primary-dark transition-colors duration-300 cursor-pointer"
             />
           ))}
         </div>

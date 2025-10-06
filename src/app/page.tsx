@@ -28,6 +28,7 @@ export default function Home() {
       </section>
       <section className="py-8 md:py-12 lg:py-20 px-4 md:px-8 lg:px-16">
         <About3/>
+        
         </section>
       <section className="py-8 md:py-12 lg:py-20 px-4 md:px-8 lg:px-16">
         <Feature13 />

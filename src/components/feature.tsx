@@ -32,11 +32,11 @@ export function FeatureSteps({
       <div className="max-w-6xl mx-auto w-full px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full border border-blue-200 mb-4">
-            <span className="text-blue-700 font-bold text-sm">For Partners</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-light/10 rounded-full border border-primary-light/30 mb-4">
+            <span className="text-primary-dark font-bold text-sm">For Partners</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
-            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
               {title}
             </span>
           </h2>
@@ -60,7 +60,7 @@ export function FeatureSteps({
               >
                 <div className={`relative bg-white rounded-xl p-5 shadow-md border ${
                   index === currentFeature
-                    ? 'border-blue-400 shadow-lg'
+                    ? 'border-primary shadow-lg'
                     : 'border-gray-100'
                 }`}>
                   
@@ -68,7 +68,7 @@ export function FeatureSteps({
                   <div className="flex items-start gap-3 mb-2">
                     <div className={`flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center font-bold text-base ${
                       index === currentFeature
-                        ? 'bg-blue-500 text-white'
+                        ? 'bg-primary text-white'
                         : 'bg-gray-100 text-gray-600'
                     }`}>
                       {index + 1}
@@ -76,7 +76,7 @@ export function FeatureSteps({
                     <div className="flex-1">
                       <h3 className={`text-lg font-bold ${
                         index === currentFeature
-                          ? 'text-blue-600'
+                          ? 'text-primary-dark'
                           : 'text-gray-800'
                       }`}>
                         {feature.title}
@@ -96,7 +96,7 @@ export function FeatureSteps({
 
         {/* Bottom CTA */}
         <div className="mt-12 text-center">
-          <div className="max-w-3xl mx-auto bg-blue-600 rounded-xl shadow-md">
+          <div className="max-w-3xl mx-auto bg-primary-dark rounded-xl shadow-md">
             <div className="px-6 py-5">
               <h3 className="text-xl font-bold text-white mb-3">
                 Ready to Reach 300,000+ Students?
@@ -104,7 +104,7 @@ export function FeatureSteps({
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a
                   href="#"
-                  className="px-5 py-2 bg-white text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-all duration-200 flex items-center justify-center gap-2"
+                  className="px-5 py-2 bg-white text-primary-dark font-medium rounded-lg hover:bg-blue-50 transition-all duration-200 flex items-center justify-center gap-2"
                 >
                   <span>Become a Partner</span>
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

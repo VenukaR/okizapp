@@ -21,9 +21,9 @@ const LoadingComponent = () => {
 
         {/* Loading dots */}
         <div className="flex justify-center gap-2 mt-4">
-          <div className="w-3 h-3 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
-          <div className="w-3 h-3 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
-          <div className="w-3 h-3 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+          <div className="w-3 h-3 bg-primary-dark rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+          <div className="w-3 h-3 bg-primary-dark rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+          <div className="w-3 h-3 bg-primary-dark rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
         </div>
 
         {/* Loading text */}
