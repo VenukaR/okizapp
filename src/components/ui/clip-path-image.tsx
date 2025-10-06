@@ -14,7 +14,7 @@ const ClippedMediaGallery = React.forwardRef<HTMLElement, ClippedMediaGalleryPro
   ({ mediaItems, className, ...props }, ref) => {
     const defaultMediaItems = [
       {
-        src: 'img/aboutus.png',
+        src: '/img/aboutus.png',
         alt: 'Abstract Squiggle Art',
         clipId: 'clip-squiggle',
         type: 'image' as const,
@@ -74,6 +74,8 @@ const ClippedMediaGallery = React.forwardRef<HTMLElement, ClippedMediaGalleryPro
                   src={item.src}
                   alt={item.alt}
                   className='transition-all duration-300 aspect-[3/4] min-h-full align-bottom object-cover hover:scale-105 w-full'
+                  width={300}
+                  height={400}
                 />
               ) : (
                 <video

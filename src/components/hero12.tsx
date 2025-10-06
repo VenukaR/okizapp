@@ -20,10 +20,10 @@ const ContactHero = () => {
           {/* Logo */}
           <div className="rounded-xl bg-white/20 p-6 shadow-lg backdrop-blur-md">
             <Image
-              src="/Image/logo.png" // replace with your logo
+              src="/img/logo.png" // replace with your logo
               alt="OKIZ Logo"
-              className="h-20"
-              width={800}
+              className=""
+              width={400}
               height={800}
             />
           </div>

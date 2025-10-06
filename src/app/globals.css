@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 :root {
-  --primary-blue: #3b82f6;
+  --primary-blue: #3aa5dd;
   --primary-blue-light: #60a5fa;
   --primary-blue-dark: #0E183B;
 }
@@ -21,18 +21,18 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'poppins', system-ui, -apple-system, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
   line-height: 1.6;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -41,11 +41,11 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: var(--primary-blue);
-  border-radius: 4px;
+  border-radius: 7px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-blue-dark);
+  background: var(--primary-blue-light);
 }
 
 /* Smooth transitions for theme changes */
