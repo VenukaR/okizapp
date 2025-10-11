@@ -40,13 +40,13 @@ export default function ContactPage() {
 
             {/* Heading */}
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-6 leading-tight">
-              Let's Build Something
+              Let&apos;s Build Something
               <span className="block text-blue-100">Amazing Together</span>
             </h1>
 
             {/* Description */}
             <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-              Ready to transform student savings in Sri Lanka? Get in touch with our team and let's discuss how OKIZ can benefit your business.
+              Ready to transform student savings in Sri Lanka? Get in touch with our team and let&apos;s discuss how OKIZ can benefit your business.
             </p>
 
             {/* Contact Info Cards */}
