@@ -1,6 +1,5 @@
 
 import { ContactForm } from "@/components/contact/contact-form";
-import { ContactHero } from "@/components/hero12";
 
 export default function ContactPage() {
   return (

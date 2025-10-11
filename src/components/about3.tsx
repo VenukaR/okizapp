@@ -83,9 +83,9 @@ const renderCountUpValue = (value: string) => {
 };
 
 const defaultAchievements = [
-  { label: "Universities Reached", value: "01+" },
+  { label: "Universities Reached", value: "02+" },
   { label: "Students Eligible", value: "300,000+" },
-  { label: "Partner Shops", value: "01+" },
+  { label: "Partner Shops", value: "04+" },
   { label: "Average Savings", value: "20%" },
 ];
 
@@ -117,7 +117,7 @@ const About3 = ({
             <div className="h-1 w-20 bg-gradient-to-r from-primary-lightdark to-primary-dark rounded-full md:mx-0 mx-auto"></div>
           </div>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Sri Lanka&apos;s first digital platform built exclusively to connect university students with verified discounts at local shops and brands. Student life should be affordable — businesses deserve smarter ways to attract loyal customers.
+            Sri Lanka&apos;s first digital platform built exclusively to connect university students with verified discounts at local shops and brands. Student life should be affordable  businesses deserve smarter ways to attract loyal customers.
           </p>
         </div>
 
