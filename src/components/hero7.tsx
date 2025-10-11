@@ -334,16 +334,24 @@ const Hero7 = ({
           subtitle="Register Today to Enjoy Exclusive Discounts and Benefits!"
           columnCount={columnCount}
           logos={[
-            { name: "Pizza Hut", logo: "/img/shops/pizzahut.png" },
-            { name: "Spa Ceylon", logo: "/img/shops/spaceylon.png" },
-            { name: "Caravan Fresh", logo: "/img/shops/caravanfresh.png" },
-            { name: "Tea Avenue", logo: "/img/shops/teaavenue.png" },
-            { name: "Bin Chun", logo: "/img/shops/binchun.png" },
-            { name: "7-Eleven", logo: "/img/shops/sevenseven.png" },
-            { name: "Barista", logo: "/img/shops/barista.png" },
-            { name: "Java Lounge", logo: "/img/shops/java.png" },
-            { name: "No Limit", logo: "/img/shops/nolimit.png" },
-            { name: "Burger King", logo: "/img/shops/bk.png" },
+            // { name: "Pizza Hut", logo: "/img/shops/pizzahut.png" },
+            // { name: "Spa Ceylon", logo: "/img/shops/spaceylon.png" },
+            // { name: "Caravan Fresh", logo: "/img/shops/caravanfresh.png" },
+            // { name: "Tea Avenue", logo: "/img/shops/teaavenue.png" },
+            // { name: "Bin Chun", logo: "/img/shops/binchun.png" },
+            // { name: "7-Eleven", logo: "/img/shops/sevenseven.png" },
+            // { name: "Barista", logo: "/img/shops/barista.png" },
+            // { name: "Java Lounge", logo: "/img/shops/java.png" },
+            // { name: "No Limit", logo: "/img/shops/nolimit.png" },
+            // { name: "Burger King", logo: "/img/shops/bk.png" },
+            {name:"Hangla",logo:"/img/shops/hangla.png"},
+            {name:"Sugarbeach",logo:"/img/shops/sugarbeach.png"},
+               {name:"Hangla",logo:"/img/shops/hangla.png"},
+            {name:"Sugarbeach",logo:"/img/shops/sugarbeach.png"},
+               {name:"Hangla",logo:"/img/shops/hangla.png"},
+            {name:"Sugarbeach",logo:"/img/shops/sugarbeach.png"},
+               {name:"Hangla",logo:"/img/shops/hangla.png"},
+            {name:"Sugarbeach",logo:"/img/shops/sugarbeach.png"},
           ]}
         />
       </section>

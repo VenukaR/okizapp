@@ -18,45 +18,61 @@ const Logos8 = ({
   subtitle = "Join hundreds of companies already growing with us",
   logos = [
     {
-      name: "Barista",
-      logo: "/img/shops/barista.png",
+      name: "Hangla",
+      logo: "/img/shops/hangla.png",
     },
     {
-      name: "Bin Chun",
-      logo: "/img/shops/binchun.png",
+      name: "Sugar Beach",
+      logo: "/img/shops/sugarbeach.png",
+    },
+      {
+      name: "Hangla",
+      logo: "/img/shops/hangla.png",
     },
     {
-      name: "Burger King",
-      logo: "/img/shops/bk.png",
+      name: "Sugar Beach",
+      logo: "/img/shops/sugarbeach.png",
+    },
+      {
+      name: "Hangla",
+      logo: "/img/shops/hangla.png",
     },
     {
-      name: "Caravan Fresh",
-      logo: "/img/shops/caravanfresh.png",
+      name: "Sugar Beach",
+      logo: "/img/shops/sugarbeach.png",
     },
-    {
-      name: "Java Coffee",
-      logo: "/img/shops/java.png",
-    },
-    {
-      name: "No Limit",
-      logo: "/img/shops/nolimit.png",
-    },
-    {
-      name: "Pizza Hut",
-      logo: "/img/shops/pizzahut.png",
-    },
-    {
-      name: "Seven Seven",
-      logo: "/img/shops/sevenseven.png",
-    },
-    {
-      name: "Spaceylon",
-      logo: "/img/shops/spaceylon.png",
-    },
-    {
-      name: "Tea Avenue",
-      logo: "/img/shops/teaavenue.png",
-    },
+    // {
+    //   name: "Burger King",
+    //   logo: "/img/shops/bk.png",
+    // },
+    // {
+    //   name: "Caravan Fresh",
+    //   logo: "/img/shops/caravanfresh.png",
+    // },
+    // {
+    //   name: "Java Coffee",
+    //   logo: "/img/shops/java.png",
+    // },
+    // {
+    //   name: "No Limit",
+    //   logo: "/img/shops/nolimit.png",
+    // },
+    // {
+    //   name: "Pizza Hut",
+    //   logo: "/img/shops/pizzahut.png",
+    // },
+    // {
+    //   name: "Seven Seven",
+    //   logo: "/img/shops/sevenseven.png",
+    // },
+    // {
+    //   name: "Spaceylon",
+    //   logo: "/img/shops/spaceylon.png",
+    // },
+    // {
+    //   name: "Tea Avenue",
+    //   logo: "/img/shops/teaavenue.png",
+    // },
   ],
 }: Logos8Props) => {
   const scrollRef = useRef<HTMLDivElement>(null);
