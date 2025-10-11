@@ -31,14 +31,10 @@ jobs:
       - name: 🏗️ Build Next.js static site
         run: npm run build
 
-      - name: 📤 Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+      - name: 📤 Deploy via FTP      
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
-          protocol: ftp
-          local-dir: ./out/
           server-dir: /public_html/
-          timeout: 60000
