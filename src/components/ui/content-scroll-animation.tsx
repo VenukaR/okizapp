@@ -13,37 +13,32 @@ export const ContainerScroll = ({
   const { scrollYProgress } = useScroll({
     target: containerRef,
   });
+
   const [isMobile, setIsMobile] = React.useState(false);
 
   React.useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
     checkMobile();
     window.addEventListener("resize", checkMobile);
-    return () => {
-      window.removeEventListener("resize", checkMobile);
-    };
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const scaleDimensions = () => {
-    return isMobile ? [0.7, 0.9] : [1.05, 1];
-  };
+  // Smooth scale difference between desktop and mobile
+  const scaleDimensions = () => (isMobile ? [0.85, 0.95] : [1.08, 1]);
 
-  const rotate = useTransform(scrollYProgress, [0, 1], [20, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
-  const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  // Start rotation and animation slightly earlier, pivot from lower position
+  const rotate = useTransform(scrollYProgress, [0.1, 0.7], [25, 0]);
+  const scale = useTransform(scrollYProgress, [0.1, 0.7], scaleDimensions());
+  const translate = useTransform(scrollYProgress, [0.1, 0.7], [40, -80]);
 
   return (
     <div
-      className="h-[45rem] md:h-[50rem] flex items-center justify-center relative p-0 md:p-0"
+      className="h-[48rem] md:h-[55rem] flex items-center justify-center relative"
       ref={containerRef}
     >
       <div
-        className="py-10 md:py-10 w-full relative"
-        style={{
-          perspective: "1000px",
-        }}
+        className="py-10 w-full relative"
+        style={{ perspective: "1200px" }}
       >
         <Header translate={translate} titleComponent={titleComponent} />
         <Card rotate={rotate} translate={translate} scale={scale}>
@@ -54,7 +49,10 @@ export const ContainerScroll = ({
   );
 };
 
-export const Header = ({ translate, titleComponent }: {
+export const Header = ({
+  translate,
+  titleComponent,
+}: {
   translate: MotionValue<number>;
   titleComponent: string | React.ReactNode;
 }) => {
@@ -63,7 +61,7 @@ export const Header = ({ translate, titleComponent }: {
       style={{
         translateY: translate,
       }}
-      className="div max-w-5xl mx-auto text-center"
+      className="max-w-5xl mx-auto text-center mb-10"
     >
       {titleComponent}
     </motion.div>
@@ -85,12 +83,14 @@ export const Card = ({
       style={{
         rotateX: rotate,
         scale,
+        transformOrigin: "center 90%", // ✅ Pivot near the bottom for natural rotation
+        transition: "all 0.8s cubic-bezier(0.22, 1, 0.36, 1)", // ✅ Smooth easing curve
         boxShadow:
-          "0 0 #3fc0f04d, 0 9px 20px #3fc0f04a, 0 37px 37px #3fc0f042, 0 84px 50px #3fc0f026, 0 149px 60px #3fc0f00a, 0 233px 65px #3fc0f003",
+          "0 5px 20px rgba(63, 192, 240, 0.25), 0 25px 50px rgba(63, 192, 240, 0.2), 0 100px 100px rgba(63, 192, 240, 0.15)",
       }}
-      className="max-w-4xl -mt-12 mx-auto h-[25rem] md:h-[30rem] w-full border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl"
+      className="max-w-4xl -mt-12 mx-auto h-[25rem] md:h-[30rem] w-full border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#1E1E1E] rounded-[30px] shadow-2xl"
     >
-      <div className=" h-full w-full  overflow-hidden rounded-2xl bg-gray-100 dark:bg-zinc-900 md:rounded-2xl md:p-0 ">
+      <div className="h-full w-full overflow-hidden rounded-2xl bg-gray-100 dark:bg-zinc-900">
         {children}
       </div>
     </motion.div>

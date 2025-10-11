@@ -5,7 +5,7 @@ export default function WhyChooseUs() {
     {
       title: "Performance",
       description:
-        "Fast, reliable, and optimized — Okiz ensures every interaction is smooth, saving students time and effort.",
+        "Fast, reliable, and optimized  Okiz ensures every interaction is smooth, saving students time and effort.",
       icon: <Clock className="w-6 h-6 text-primary-dark" />,
       color: "from-blue-50 to-blue-100",
       border: "border-blue-200",
@@ -21,7 +21,7 @@ export default function WhyChooseUs() {
     {
       title: "Innovation",
       description:
-        "Okiz is more than discounts — QR scan-to-save, digital ID verification, and smarter student tools for the future.",
+        "Okiz is more than discounts  QR scan-to-save, digital ID verification, and smarter student tools for the future.",
       icon: <Zap className="w-6 h-6 text-emerald-600" />,
       color: "from-emerald-50 to-emerald-100",
       border: "border-emerald-200",

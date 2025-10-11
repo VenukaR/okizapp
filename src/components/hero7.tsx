@@ -21,7 +21,7 @@ interface Hero7Props {
 }
 
 const Hero7 = ({
-  // heading = "Exclusive Student Discounts — Only for Sri Lankan Universities",
+  // heading = "Exclusive Student Discounts  Only for Sri Lankan Universities",
   description = "Why pay full price when you're a student? OKIZ gives you access to exclusive deals and discounts across Sri Lanka  from food and fashion to books and gyms. Verified university students save more every day.",
   button = {
     text: "Check Your Eligibility",
