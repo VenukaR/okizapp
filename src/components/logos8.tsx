@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Image from 'next/image';
+ 
 
 interface Logo {
   name: string;
@@ -140,21 +140,15 @@ const Logos8 = ({
                 key={`${logo.name}-${index}`}
                 className="flex-shrink-0 group"
               >
-                <div className="w-40 h-40 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 border border-blue-100 overflow-hidden p-4 flex items-center justify-center">
+                <div className="w-40 h-40 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 p-4 flex items-center justify-center">
                   <div className="relative w-full h-full">
-                    <Image
+                    <img
                       src={logo.logo}
                       alt={`${logo.name} logo`}
-                      className="w-full h-full object-cover rounded-xl transform group-hover:scale-110 transition-transform duration-700"
+                      className="w-full h-full object-contain rounded-xl transform group-hover:scale-110 transition-transform duration-700"
                       width={160}
                       height={160}
                     />
-                    {/* Overlay with company name */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl flex items-end justify-center pb-3">
-                      <p className="text-white font-semibold text-sm">
-                        {logo.name}
-                      </p>
-                    </div>
                   </div>
                 </div>
               </div>

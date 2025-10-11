@@ -16,13 +16,13 @@ interface Logo {
   className?: string;
 }
 
-interface Logos3Props {
+interface LogosHeroProps {
   heading?: string;
   logos?: Logo[];
   className?: string;
 }
 
-const Logos3 = ({
+const LogosHero = ({
   heading = "Trusted by Leading Universities",
    logos = [
     {
@@ -74,16 +74,16 @@ const Logos3 = ({
       className: "h-20 w-auto",
     },
   ]
-}: Logos3Props) => {
+}: LogosHeroProps) => {
   return (
-    <section className="py-10 bg-grey-50 dark:bg-gray-900 sm:py-16 lg:py-20">
-      <div className="container flex flex-col items-center text-center">
+    <section className="py-10 bg-grey-50 dark:bg-gray-900 sm:py-16 lg:py-20 w-full">
+      <div className="flex flex-col items-center text-center px-4">
         <h1 className="my-6 text-2xl font-bold text-pretty lg:text-4xl">
           {heading}
         </h1>
       </div>
-      <div className="pt-10 md:pt-16 lg:pt-20">
-        <div className="relative mx-auto flex items-center justify-center lg:max-w-5xl overflow-hidden">
+      <div className="pt-10 md:pt-16 lg:pt-20 w-full">
+        <div className="relative flex items-center justify-center overflow-hidden w-full">
           <Carousel
             opts={{ loop: true }}
             plugins={[AutoScroll({ playOnInit: true })]}
@@ -111,12 +111,12 @@ const Logos3 = ({
             </CarouselContent>
           </Carousel>
           {/* Gradient overlays for seamless scroll effect - hidden on mobile */}
-          <div className="absolute inset-y-0 left-0 w-6 sm:w-8 md:w-12 bg-gradient-to-r from-gray-50 to-transparent dark:from-gray-900 pointer-events-none hidden sm:block"></div>
-          <div className="absolute inset-y-0 right-0 w-6 sm:w-8 md:w-12 bg-gradient-to-l from-gray-50 to-transparent dark:from-gray-900 pointer-events-none hidden sm:block"></div>
+          <div className="absolute inset-y-0 left-0 w-6 sm:w-8 md:w-12 bg-gradient-to-r from-blue-50 to-transparent dark:from-gray-900 pointer-events-none hidden sm:block"></div>
+          <div className="absolute inset-y-0 right-0 w-6 sm:w-8 md:w-12 bg-gradient-to-l from-blue-50 to-transparent dark:from-gray-900 pointer-events-none hidden sm:block"></div>
         </div>
       </div>
     </section>
   );
 };
 
-export { Logos3 };
+export { LogosHero };

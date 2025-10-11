@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#zip
+*.zip
+
+# Google Cloud credentials - NEVER commit these!
+*.json
+okizapp-*.json
+*service-account*.json

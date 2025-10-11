@@ -11,7 +11,7 @@ export default function ShopsPage() {
     {
       name: "Starter",
       price: {
-        monthly: 49,
+        monthly: "TBA",
         yearly: 0, // Not used
       },
       description: "Essential tools for small businesses new to student marketing.",
@@ -67,7 +67,7 @@ export default function ShopsPage() {
     {
       name: "Growth",
       price: {
-        monthly: 99,
+        monthly: "TBA",
         yearly: 0, // Not used
       },
       description: "Perfect for established businesses ready to scale student engagement.",
@@ -124,7 +124,7 @@ export default function ShopsPage() {
     {
       name: "Enterprise",
       price: {
-        monthly: 249,
+        monthly: "TBA",
         yearly: 0, // Not used
       },
       description: "Comprehensive solution for large businesses with multiple locations.",
@@ -183,7 +183,7 @@ export default function ShopsPage() {
 
   return (
     <div >
-      <section className="py-8 md:py-12 lg:py-0 justify-center" id="get-started"> 
+      <section className="py-0 md:py-0 lg:py-0 justify-center" id="get-started"> 
         <Hero243/>
       </section>  
       <section className="py-8 md:py-12 lg:py-0 w-full flex flex-col items-center">

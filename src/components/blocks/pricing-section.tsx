@@ -14,7 +14,7 @@ interface Feature {
 interface PricingTier {
   name: string
   price: {
-    monthly: number
+    monthly: string | number
     yearly: number
   }
   description: string

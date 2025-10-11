@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+ 
 
 const LoadingComponent = () => {
   return (
@@ -7,8 +7,8 @@ const LoadingComponent = () => {
       <div className="relative flex flex-col items-center">
         {/* Logo */}
         <div className="relative mb-8">
-          <Image
-            src="/img/logoblue.png"
+          <img
+            src="/img/logo.png"
             alt="OKIZ Logo"
             className="h-24 md:h-32 w-auto"
             width={128}

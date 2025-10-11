@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import Image from 'next/image';
+ 
 
 interface TrustedUniProps {
   companiesTitle?: string;
@@ -62,7 +62,7 @@ const TrustedUni = ({
                 onMouseEnter={() => setHoveredCompany(idx)}
                 onMouseLeave={() => setHoveredCompany(null)}
               >
-                <Image
+                <img
                   src={company.src}
                   alt={company.alt}
                   width={100}

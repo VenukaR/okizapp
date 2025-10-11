@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Image from 'next/image';
+ 
 
 interface TeamMember {
   id: string;
@@ -19,42 +19,42 @@ const Team1 = ({
   heading = "Meet Our Team",
   description = "Our diverse team of experts brings together decades of experience in design, engineering, and product development.",
   members = [
-    {
-      id: "member-1",
-      name: "Dimal Chandrawansha",
-      role: "CEO & Founder",
-      avatar: "/img/team/dimal.jpeg",
-    },
-    {
-      id: "member-2",
-      name: "Dimal Chandrawansha",
-      role: "CTO",
-      avatar: "/img/team/dimal.jpeg",
-    },
-    {
-      id: "member-3",
-      name: "Dimal Chandrawansha",
-      role: "Head of Design",
-      avatar: "/img/team/dimal.jpeg",
-    },
-    {
-      id: "member-4",
-      name: "Dimal Chandrawansha",
-      role: "Lead Engineer",
-      avatar: "/img/team/dimal.jpeg",
-    },
-    {
-      id: "member-5",
-      name: "Dimal Chandrawansha",
-      role: "Product Manager",
-      avatar: "/img/team/dimal.jpeg",
-    },
-    {
-      id: "member-6",
-      name: "Dimal Chandrawansha",
-      role: "UX Designer",
-      avatar: "/img/team/dimal.jpeg",
-    },
+    // {
+    //   id: "member-1",
+    //   name: "Dimal Chandrawansha",
+    //   role: "CEO & Founder",
+    //   avatar: "/img/team/dimal.jpeg",
+    // },
+    // {
+    //   id: "member-2",
+    //   name: "Dimal Chandrawansha",
+    //   role: "CTO",
+    //   avatar: "/img/team/dimal.jpeg",
+    // },
+    // {
+    //   id: "member-3",
+    //   name: "Dimal Chandrawansha",
+    //   role: "Head of Design",
+    //   avatar: "/img/team/dimal.jpeg",
+    // },
+    // {
+    //   id: "member-4",
+    //   name: "Dimal Chandrawansha",
+    //   role: "Lead Engineer",
+    //   avatar: "/img/team/dimal.jpeg",
+    // },
+    // {
+    //   id: "member-5",
+    //   name: "Dimal Chandrawansha",
+    //   role: "Product Manager",
+    //   avatar: "/img/team/dimal.jpeg",
+    // },
+    // {
+    //   id: "member-6",
+    //   name: "Dimal Chandrawansha",
+    //   role: "UX Designer",
+    //   avatar: "/img/team/dimal.jpeg",
+    // },
     // {
     //   id: "member-7",
     //   name: "Sophia Martinez",
@@ -139,7 +139,7 @@ const Team1 = ({
                 {/* Image Container */}
                 <div className="relative mb-6 overflow-hidden rounded-xl">
                   <div className="aspect-square overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200">
-                    <Image
+                    <img
                       src={member.avatar}
                       alt={member.name}
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"

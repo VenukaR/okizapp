@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
-import Image from 'next/image';
+ 
 
 
 const Navbar = () => {
@@ -72,7 +72,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <Image 
+              <img 
                 src="/img/logo.png" 
                 alt="OKIZ" 
                 className="h-8 w-auto"
