@@ -42,5 +42,5 @@ jobs:
           port: 21
           protocol: ftp
           local-dir: ./out/
-          server-dir: /home/u874824708/domains/okiz.app/public_html
+          server-dir: /home/u874824708/domains/okiz.app/public_html/
           timeout: 60000
