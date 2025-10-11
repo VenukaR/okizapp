@@ -25,7 +25,12 @@ jobs:
         run: |
           npm run build
          
-
+      - name: Save static files as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nextjs-out
+          path: ./out/
+          
       - name: 🔍 Validate FTP secrets
         run: |
           if [ -z "${{ secrets.FTP_SERVER }}" ]; then echo "❌ Missing secret: FTP_SERVER" && exit 1; fi
