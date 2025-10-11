@@ -24,7 +24,7 @@ jobs:
       - name: 🏗️ Build and export Next.js
         run: |
           npm run build
-          npm run export
+         
 
       - name: 🔍 Validate FTP secrets
         run: |
