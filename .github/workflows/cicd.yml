@@ -1,4 +1,4 @@
-name: 🚀 Deploy OKIZ to Hostinger via FTP
+name: 🚀 Deploy OKIZ to Hostinger (SFTP)
 
 on:
   push:
@@ -28,13 +28,16 @@ jobs:
       - name: 📦 Install dependencies
         run: npm ci
 
-      - name: 🏗️ Build Next.js static site
+      - name: 🏗️ Build Next.js app
         run: npm run build
 
-      - name: 📤 Deploy via FTP      
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.0
+      - name: 📤 Deploy via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/
+          port: 22
+          local_path: ./out/*
+          remote_path: /public_html/
+          sftp_only: true
