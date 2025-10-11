@@ -6,7 +6,6 @@ import React, {
   useState,
 } from "react"
 import { AnimatePresence, motion } from "framer-motion"
-import Image from "next/image"
 
 interface Logo {
   name: string;
@@ -95,7 +94,7 @@ const LogoColumn: React.FC<LogoColumnProps> = React.memo(
               },
             }}
           >
-            <Image 
+            <img 
               src={currentLogo.logo} 
               alt={currentLogo.name}
               width={100}

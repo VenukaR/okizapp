@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+ 
 
 interface ClippedMediaGalleryProps extends React.ComponentPropsWithoutRef<'section'> {
   mediaItems?: {
@@ -70,7 +70,7 @@ const ClippedMediaGallery = React.forwardRef<HTMLElement, ClippedMediaGalleryPro
           {itemsToRender.map((item, index) => (
             <figure key={index} style={{ clipPath: `url(#${item.clipId})` }}>
               {item.type === 'image' ? (
-                <Image
+                <img
                   src={item.src}
                   alt={item.alt}
                   className='transition-all duration-300 aspect-[3/4] min-h-full align-bottom object-cover hover:scale-105 w-full'

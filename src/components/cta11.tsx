@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+ 
 
 interface Cta11Props {
   heading?: string;
@@ -11,7 +11,7 @@ interface Cta11Props {
 const Cta11 = ({
   heading = "Join the Future of Student–Shop Collaboration",
   description = "Whether you're a student looking for exclusive deals or a shop aiming to grow your reach, our platform connects you to opportunities that matter.",
-  imageSrc = "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=600&fit=crop",
+  imageSrc = "/img/studentsstand.png",
   imageAlt = "Students and shops connecting",
 }: Cta11Props) => {
   return (
@@ -48,7 +48,7 @@ const Cta11 = ({
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="/signup-student"
+                  href="/students"
                   className="group inline-flex items-center justify-center px-8 py-4 bg-white text-primary-dark font-bold rounded-xl hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
                 >
                   <span className="mr-2">🎓</span>
@@ -64,7 +64,7 @@ const Cta11 = ({
                 </a>
                 
                 <a
-                  href="/partner-shop"
+                  href="/shops"
                   className="group inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-bold rounded-xl border-2 border-white/50 hover:bg-white hover:text-primary-dark transition-all duration-300 transform hover:scale-105 hover:shadow-2xl backdrop-blur-sm"
                 >
                   <span className="mr-2">🛍️</span>
@@ -110,7 +110,7 @@ const Cta11 = ({
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-blue-300 rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur-xl"></div>
                 
                 <div className="relative w-full aspect-square overflow-hidden rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
-                  <Image 
+                  <img 
                     src={imageSrc} 
                     alt={imageAlt} 
                     className="w-full h-full object-cover"

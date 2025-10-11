@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
+ 
 import { AnimatedLogoCarousel } from "./animated-logo-carousel";
 
 interface Hero7Props {
@@ -90,7 +90,7 @@ const Hero7 = ({
 
         {/* Multiple Nut SVGs */}
         <div className="absolute top-32 right-20 opacity-25 animate-pulse" style={{ animationDuration: '6s', animationDelay: '0.5s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={80} 
@@ -100,7 +100,7 @@ const Hero7 = ({
         </div>
 
         <div className="absolute top-20 left-16 opacity-20 animate-bounce" style={{ animationDuration: '4s', animationDelay: '1s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={64} 
@@ -110,7 +110,7 @@ const Hero7 = ({
         </div>
 
         <div className="absolute bottom-40 left-1/4 opacity-30 animate-pulse" style={{ animationDuration: '5s', animationDelay: '2s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={72} 
@@ -120,7 +120,7 @@ const Hero7 = ({
         </div>
 
         <div className="absolute top-60 right-1/3 opacity-15 animate-bounce" style={{ animationDuration: '7s', animationDelay: '3s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={56} 
@@ -130,7 +130,7 @@ const Hero7 = ({
         </div>
 
         <div className="absolute bottom-20 right-32 opacity-25 animate-pulse" style={{ animationDuration: '8s', animationDelay: '1.5s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={68} 
@@ -140,7 +140,7 @@ const Hero7 = ({
         </div>
 
         <div className="absolute top-1/2 left-8 opacity-20 animate-bounce" style={{ animationDuration: '6s', animationDelay: '4s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={60} 
@@ -151,7 +151,7 @@ const Hero7 = ({
 
         {/* Additional Nuts */}
         <div className="absolute bottom-60 right-16 opacity-18 animate-pulse" style={{ animationDuration: '9s', animationDelay: '2.5s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={52} 
@@ -161,7 +161,7 @@ const Hero7 = ({
         </div>
 
         <div className="absolute top-44 left-1/3 opacity-22 animate-bounce" style={{ animationDuration: '5.5s', animationDelay: '3.5s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={58} 
@@ -171,7 +171,7 @@ const Hero7 = ({
         </div>
 
         <div className="absolute bottom-28 left-12 opacity-16 animate-pulse" style={{ animationDuration: '7.5s', animationDelay: '5s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={48} 
@@ -181,7 +181,7 @@ const Hero7 = ({
         </div>
 
         <div className="absolute top-72 right-1/4 opacity-20 animate-bounce" style={{ animationDuration: '6.5s', animationDelay: '1.8s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={62} 
@@ -191,7 +191,7 @@ const Hero7 = ({
         </div>
 
         <div className="absolute top-36 right-1/2 opacity-14 animate-pulse" style={{ animationDuration: '10s', animationDelay: '4.5s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={44} 
@@ -201,7 +201,7 @@ const Hero7 = ({
         </div>
 
         <div className="absolute bottom-52 left-1/2 opacity-24 animate-bounce" style={{ animationDuration: '8.5s', animationDelay: '6s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={66} 
@@ -211,7 +211,7 @@ const Hero7 = ({
         </div>
 
         <div className="absolute top-16 right-40 opacity-17 animate-pulse" style={{ animationDuration: '4.5s', animationDelay: '0.8s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={50} 
@@ -221,7 +221,7 @@ const Hero7 = ({
         </div>
 
         <div className="absolute bottom-12 right-1/3 opacity-19 animate-bounce" style={{ animationDuration: '7.2s', animationDelay: '3.2s' }}>
-          <Image 
+          <img 
             src="/svg/nut.svg" 
             alt="Nut" 
             width={54} 
@@ -301,7 +301,7 @@ const Hero7 = ({
                 key={index}
                 className="relative w-14 h-14 rounded-full border-4 border-white shadow-lg overflow-hidden transform hover:scale-110 transition-transform duration-300"
               >
-                <Image src={avatar.src} alt={avatar.alt} className="w-full h-full object-cover" width={56} height={56} />
+                <img src={avatar.src} alt={avatar.alt} className="w-full h-full object-cover" width={56} height={56} />
               </div>
             ))}
           </span>

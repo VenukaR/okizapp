@@ -112,7 +112,7 @@ export function FeatureSteps({
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="#waitlist"
                   className="px-5 py-2 bg-transparent text-white font-medium rounded-lg border border-white/70 hover:bg-white/10 transition-all duration-200"
                 >
                   Schedule a Demo

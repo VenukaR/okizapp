@@ -30,20 +30,18 @@ export function ContactForm() {
     setFormStatus("idle");
     
     try {
-      // This would be replaced with your actual submission logic
-      // For example, sending to an API endpoint that connects to Google Sheets or Airtable
-      const response = await fetch("/api/contact", {
+      
+          await fetch(
+      "https://script.google.com/macros/s/AKfycbyN4OuTX8B--hBGdAS2z_F0mDWF4z84lJ34pVXO_fNKu8qxEf9BEBgh4P8vnPzdGXg6/exec",
+      {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        mode: "no-cors", // prevents CORS errors
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
-      });
-      
-      if (!response.ok) {
-        throw new Error("Failed to submit form");
       }
-      
+    );
+      // With no-cors mode, we assume success if fetch doesn't throw an error
+      // The data should still be saved to your Google Sheet
       setFormStatus("success");
       setFormData({
         name: "",

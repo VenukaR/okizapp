@@ -1,6 +1,7 @@
 import React from 'react';
-import TrustedUni from './trustedUni';
-import Image from 'next/image';
+
+import { LogosHero } from './logosHero';
+ 
 
 interface Hero47Props {
   heading?: string;
@@ -29,11 +30,11 @@ const Hero47 = ({
   buttons = {
     primary: {
       text: "Learn more",
-      url: "#",
+      url: "#aboutus",
     },
     secondary: {
       text: "Contact Us",
-      url: "#",
+      url: "/contact",
     },
   },
   image = {
@@ -150,7 +151,7 @@ const Hero47 = ({
 <div className="relative inline-block">
   {/* Background Image inside phone */}
   <div className="absolute top-2.5 left-1/2 h-[92%] w-[69%] -translate-x-[52%] overflow-hidden rounded-[35px] shadow-2xl">
-    <Image
+    <img
       src={image.src}
       alt={image.alt}
       className="h-full w-full object-cover object-center"
@@ -160,7 +161,7 @@ const Hero47 = ({
   </div>
 
   {/* Phone Frame */}
-  <Image
+  <img
     className="relative z-10 drop-shadow-2xl w-80 lg:w-96"
     src="/img/phone-2.png"
     width={450}
@@ -198,7 +199,7 @@ const Hero47 = ({
 
 {/* 🚀 Extra Image OUTSIDE phone */}
 <div className="absolute z-30 block lg:right-[-140px] lg:bottom-[15] right-[-60px] bottom-[10px] lg:translate-x-25 lg:translate-y-2">
-  <Image
+  <img
     src="/img/extra-badge.png" 
     alt="Special Badge" 
     className="h-auto object-contain drop-shadow-xl w-[200px] lg:w-[350px]"
@@ -212,7 +213,7 @@ const Hero47 = ({
         </div>
           {/* TrustedUni component added at the bottom center */}
         <div className="mt-0">
-          <TrustedUni />
+          <LogosHero/>
         </div>
       </div>
     </section>

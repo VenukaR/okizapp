@@ -26,7 +26,7 @@ export default function Home() {
       <section className="py-8 md:py-12 lg:py-0 px-0 md:px-0 lg:px-0">
         <Hero47 />
       </section>
-      <section className="py-8 md:py-12 lg:py-20 px-4 md:px-8 lg:px-16">
+      <section className="py-8 md:py-12 lg:py-20 px-4 md:px-8 lg:px-16" id="aboutus">
         <About3/>
         
         </section>

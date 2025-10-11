@@ -4,7 +4,7 @@
 // import { motion } from 'framer-motion';
 // import { FaTshirt, FaLaptop, FaUtensils, FaChartBar, FaUsers, FaHandshake, FaMobileAlt, FaGlobe } from 'react-icons/fa';
 // import { IoMdCheckmarkCircle } from 'react-icons/io';
-// import Image from 'next/image';
+//  
 // // import { Hero47 } from '@/components/sections/HeroSection';
 
 // export default function Home() {
@@ -203,7 +203,7 @@
 //             <div className="flex flex-col md:flex-row items-center">
 //               <div className="w-full md:w-1/3 mb-6 md:mb-0">
 //                 <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto">
-//                   <Image 
+//                   <img 
 //                     src="/vercel.svg" 
 //                     alt="CEO" 
 //                     layout="fill"
@@ -349,7 +349,7 @@
 //                 whileHover={{ y: -10, transition: { duration: 0.3 } }}
 //               >
 //                 <div className="h-48 relative">
-//                   <Image
+//                   <img
 //                     src={leader.image}
 //                     alt={leader.name}
 //                     layout="fill"
@@ -455,7 +455,7 @@
 //               transition={{ duration: 0.8 }}
 //             >
 //               <div className="relative h-96 md:h-[500px]">
-//                 <Image
+//                 <img
 //                   src="/file.svg" // Replace with actual app mockup image
 //                   alt="OKIZ Mobile App"
 //                   layout="fill"

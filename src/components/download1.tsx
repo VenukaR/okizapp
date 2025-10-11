@@ -2,7 +2,7 @@
 
 import { Smartphone, Tablet } from "lucide-react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+ 
 
 interface Download1Props {
   heading?: string;
@@ -91,7 +91,7 @@ const Download1 = ({
                 href={platforms.ios?.url}
                 className="inline-block hover:scale-105 transition"
               >
-                <Image
+                <img
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/badges/appstore.png"
                   alt="Download on the App Store"
                   className="h-11"
@@ -130,7 +130,7 @@ const Download1 = ({
                   href={platforms.android?.url}
                   className="inline-block hover:scale-105 transition"
                 >
-                  <Image
+                  <img
                     src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/badges/googleplay.png"
                     alt="Download on Google Play"
                     className="h-11"

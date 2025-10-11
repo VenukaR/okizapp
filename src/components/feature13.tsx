@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+ 
 
 interface Feature {
   id: string;
@@ -23,7 +23,7 @@ const Feature13 = ({
       subtitle: "🎓 FOR STUDENTS",
       description:
         "Verified university students in Sri Lanka get instant savings on food, clothing, books, tech, gyms, and more. Simply scan your OKIZ QR at checkout and enjoy up to 20% off.",
-      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=300&fit=crop",
+      image:"/img/stud2.jpg",
     },
     {
       id: "feature-2",
@@ -31,7 +31,7 @@ const Feature13 = ({
       subtitle: "🛍️ FOR SHOPS",
       description:
         "Local shops and brands can tap into Sri Lanka's 300,000+ university students with targeted, trackable promotions. OKIZ helps you attract repeat customers without wasting money on broad ads.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
+      image: "/img/shopkeeper.jpg",
     },
   ],
 }: Feature13Props) => {
@@ -68,7 +68,7 @@ const Feature13 = ({
                     </div>
                     <div className="w-2/5 shrink-0 relative overflow-hidden">
                       <div className={`absolute inset-0 bg-gradient-to-br ${gradientClass} opacity-20 group-hover:opacity-30 transition-opacity duration-500`}></div>
-                      <Image
+                      <img
                         src={feature.image}
                         alt={feature.title}
                         width={400}

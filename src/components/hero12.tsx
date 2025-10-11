@@ -1,12 +1,12 @@
 import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
-import Image from "next/image";
+ 
 
 const ContactHero = () => {
   return (
     <section className="relative overflow-hidden py-32 bg-transparent">
       {/* Background pattern */}
       <div className="absolute inset-0 flex items-center justify-center opacity-20">
-        <Image
+        <img
           alt="background pattern"
           src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/square-alt-grid.svg"
           className="[mask-image:radial-gradient(75%_75%_at_center,white,transparent)] w-full h-full object-cover"
@@ -19,7 +19,7 @@ const ContactHero = () => {
         <div className="flex flex-col items-center text-center gap-8 max-w-4xl mx-auto">
           {/* Logo */}
           <div className="rounded-xl bg-white/20 p-6 shadow-lg backdrop-blur-md">
-            <Image
+            <img
               src="/img/logo.png" // replace with your logo
               alt="OKIZ Logo"
               className=""

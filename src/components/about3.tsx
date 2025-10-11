@@ -178,14 +178,14 @@ const About3 = ({
               <p className="max-w-2xl mx-auto text-lg text-blue-100">{achievementsDescription}</p>
             </div>
 
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               {achievements.map((item, idx) => (
                 <div
                   key={item.label + idx}
-                  className="text-center p-6 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 border border-white/20"
+                  className="text-center p-4 md:p-6 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 border border-white/20"
                 >
-                  <div className="text-3xl md:text-5xl font-bold text-white mb-2">{renderCountUpValue(item.value)}</div>
-                  <p className="text-sm text-blue-100 font-medium">{item.label}</p>
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-2 leading-tight">{renderCountUpValue(item.value)}</div>
+                  <p className="text-xs sm:text-sm text-blue-100 font-medium leading-tight">{item.label}</p>
                 </div>
               ))}
             </div>

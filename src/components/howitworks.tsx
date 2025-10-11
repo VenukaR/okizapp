@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import Image from 'next/image';
+ 
  import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
  
 const HowToRegister = () => {
@@ -81,12 +81,12 @@ const HowToRegister = () => {
 
                 {/* Phone Mockup */}
                 <div className="relative w-auto h-60 mx-auto mb-6 rounded-2xl overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
-                   <Image
+                   <img
                     src={step.mockup}
                     alt={`Step ${step.number} Mockup`}
-                    fill
+                    
                     style={{ objectFit: 'contain' }}
-                    className="transition-transform duration-300 ease-out group-hover:scale-125 scale-110 "
+                    className="transition-transform duration-300 ease-out group-hover:scale-125 scale-60 "
                   />
                 </div>
 

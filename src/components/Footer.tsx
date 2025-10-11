@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import Image from 'next/image';
+ 
 import { motion } from 'framer-motion';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaAppStore, FaGooglePlay } from 'react-icons/fa';
 
@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-4">
               <div className="flex items-center">
-                <Image
+                <img
                   src="/img/logo.png"
                   alt="OKIZ Logo"
                   width={70}

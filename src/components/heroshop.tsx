@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+ 
 import { ContainerScroll } from "./ui/content-scroll-animation";
 
 export function ShopOwnersDash() {
@@ -18,7 +18,7 @@ export function ShopOwnersDash() {
           </>
         }
       >
-        <Image
+        <img
           src={`/img/screenshot.png`}
           alt="hero"
           height={720}
