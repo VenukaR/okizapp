@@ -39,6 +39,50 @@ const defaultCompanies = [
     src: "/img/unilogo/nibm.png",
     alt: "NIBM",
   },
+  {
+    src: "/img/unilogo/uj.png",
+    alt: "University of Jpura",
+  },
+  {
+    src: "/img/unilogo/up.png",
+    alt: "University of Peradeniya",
+  },
+  {
+    src: "/img/unilogo/cinec.png",
+    alt: "CINEC",
+  },
+  {
+    src: "/img/unilogo/esoft.png",
+    alt: "ESOFT",
+  },
+  {
+    src: "/img/unilogo/horizon.png",
+    alt: "Horizon Campus",
+  },
+  {
+    src: "/img/unilogo/kdu.png",
+    alt: "General Sir John Kotelawala Defence University",
+  },
+  {
+    src: "/img/unilogo/open.png",
+    alt: "Open University of Sri Lanka",
+  },
+  {
+    src: "/img/unilogo/ujaffna.png",
+    alt: "University of Jaffna",
+  },
+  {
+    src: "/img/unilogo/uk.png",
+    alt: "University of Kelaniya",
+  },
+  {
+    src: "/img/unilogo/ur.png",
+    alt: "University of Ruhuna",
+  },
+  {
+    src: "/img/unilogo/wayamba.png",
+    alt: "Wayamba University of Sri Lanka",
+  },
 ];
 
 

@@ -23,6 +23,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Preload critical images */}
+        <link rel="preload" href="/img/logo.png" as="image" />
+        <link rel="preload" href="/img/logoblue.png" as="image" />
+        <link rel="preload" href="/img/aboutus.png" as="image" />
+        <link rel="preload" href="/img/student.png" as="image" />
+        <link rel="preload" href="/img/shopowner.png" as="image" />
+        <link rel="preload" href="/img/mockupback.png" as="image" />
+        <link rel="preload" href="/img/screenshot.png" as="image" />
+        <link rel="preload" href="/img/phone-2.png" as="image" />
+        {/* Preload hero section images */}
+        <link rel="preload" href="/img/students.png" as="image" />
+        <link rel="preload" href="/img/studentsstand.png" as="image" />
+      </head>
       <body className={`${inter.variable} font-sans antialiased theme-transition`}>
         <ThemeProvider>
           <div className="flex flex-col min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white">

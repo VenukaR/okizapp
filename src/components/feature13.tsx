@@ -38,7 +38,7 @@ const Feature13 = ({
   return (
     <section className="py-16 bg-gradient-to-b from-primary-transparent/30 to-white rounded-3xl">
       <div className="container max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-bold lg:text-5xl text-center bg-gradient-to-r from-primary-dark to-blue-800 bg-clip-text text-transparent mb-4">
+        <h2 className="text-4xl font-bold lg:text-5xl text-center bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent mb-4">
           {heading}
         </h2>
         <div className="h-1 w-24 bg-gradient-to-r from-primary-lightdark to-primary-dark mx-auto mb-16 rounded-2xl"></div>
