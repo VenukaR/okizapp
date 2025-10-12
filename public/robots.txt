@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Disallow private pages
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+
+# Allow search engines to index images
+Allow: /img/
+Allow: /svg/
+
+# Sitemap location
+Sitemap: https://okiz.app/sitemap.xml
+
+# Crawl-delay for courtesy
+Crawl-delay: 1

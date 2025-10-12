@@ -26,20 +26,20 @@ const Logos8 = ({
       logo: "/img/shops/sugarbeach.png",
     },
       {
-      name: "Hangla",
-      logo: "/img/shops/hangla.png",
+      name: "Pearl Beach",
+      logo: "/img/shops/pearlbeach.png",
     },
     {
-      name: "Sugar Beach",
-      logo: "/img/shops/sugarbeach.png",
+      name: "Soul Beach",
+      logo: "/img/shops/soulbeach.png",
     },
       {
       name: "Hangla",
       logo: "/img/shops/hangla.png",
     },
     {
-      name: "Sugar Beach",
-      logo: "/img/shops/sugarbeach.png",
+      name: "Pearl Beach",
+      logo: "/img/shops/pearlbeach.png",
     },
     // {
     //   name: "Burger King",

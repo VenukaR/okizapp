@@ -346,12 +346,13 @@ const Hero7 = ({
             // { name: "Burger King", logo: "/img/shops/bk.png" },
             {name:"Hangla",logo:"/img/shops/hangla.png"},
             {name:"Sugarbeach",logo:"/img/shops/sugarbeach.png"},
-               {name:"Hangla",logo:"/img/shops/hangla.png"},
+            {name: "Soul beach",logo:"/img/shops/soulbeach.png"},
+            {name: "Pearl Beach", logo:"/img/shops/pearlbeach.png"},
+              {name:"Hangla",logo:"/img/shops/hangla.png"},
             {name:"Sugarbeach",logo:"/img/shops/sugarbeach.png"},
-               {name:"Hangla",logo:"/img/shops/hangla.png"},
-            {name:"Sugarbeach",logo:"/img/shops/sugarbeach.png"},
-               {name:"Hangla",logo:"/img/shops/hangla.png"},
-            {name:"Sugarbeach",logo:"/img/shops/sugarbeach.png"},
+            {name: "Soul beach",logo:"/img/shops/soulbeach.png"},
+            {name: "Pearl Beach", logo:"/img/shops/pearlbeach.png"},
+
           ]}
         />
       </section>

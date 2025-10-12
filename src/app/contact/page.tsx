@@ -1,5 +1,27 @@
 
 import { ContactForm } from "@/components/contact/contact-form";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact OKIZ | Get in Touch with Student Discount Platform",
+  description: "Contact OKIZ team for business partnerships, student support, or general inquiries. Join our network of 300,000+ students and partner businesses in Sri Lanka.",
+  keywords: [
+    "contact OKIZ",
+    "business partnership",
+    "student support",
+    "OKIZ team",
+    "partner with OKIZ",
+    "student marketplace contact"
+  ],
+  alternates: {
+    canonical: '/contact',
+  },
+  openGraph: {
+    title: "Contact OKIZ | Business Partnerships & Student Support",
+    description: "Get in touch with OKIZ team for partnerships and support. Response within 24 hours.",
+    url: "https://okiz.app/contact",
+  },
+};
 
 export default function ContactPage() {
   return (
