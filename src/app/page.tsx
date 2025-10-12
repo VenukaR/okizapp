@@ -8,7 +8,17 @@ import Hero47 from "@/components/hero47";
 import LoadingComponent from "@/components/loading";
 import Logos8 from "@/components/logos8";
 import Team1 from "@/components/team1";
+import { StructuredData, faqSchema } from "@/components/structured-data";
 import { useState, useEffect } from "react";
+
+// SEO: This would be ideal, but since this is a client component, we'll handle SEO in layout
+// export const metadata = {
+//   title: "Student Discounts & Deals in Sri Lanka",
+//   description: "Join 300,000+ verified students accessing exclusive discounts from local businesses. Save money on food, shopping, entertainment & more with OKIZ.",
+//   alternates: {
+//     canonical: 'https://okiz.app',
+//   },
+// };
 
 // Critical images that should be preloaded
 const criticalImages = [
@@ -109,6 +119,9 @@ export default function Home() {
   }
   return (
     <div >
+      {/* FAQ Structured Data */}
+      <StructuredData data={faqSchema} />
+      
       <section className="py-8 md:py-12 lg:py-0 px-0 md:px-0 lg:px-0">
         <Hero47 />
       </section>

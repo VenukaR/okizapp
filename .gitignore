@@ -47,3 +47,7 @@ next-env.d.ts
 *.json
 okizapp-*.json
 *service-account*.json
+
+#Md
+# Ignore markdown files
+*.md
