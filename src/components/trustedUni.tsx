@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import universityLogosData from "@/data/university-logos.json";
  
 
 interface TrustedUniProps {
@@ -14,77 +15,11 @@ interface TrustedUniProps {
 
 
 
-const defaultCompanies = [
-  {
-    src: "/img/unilogo/iit.png",
-    alt: "IIT",
-  },
-  {
-    src: "/img/unilogo/sliit.png",
-    alt: "SLIIT",
-  },
-  {
-    src: "/img/unilogo/uc.png",
-    alt: "University of Colombo",
-  },
-  {
-    src: "/img/unilogo/um.png",
-    alt: "University of Moratuwa",
-  },
-  {
-    src: "/img/unilogo/nsbm.png",
-    alt: "NSBM",
-  },
-  {
-    src: "/img/unilogo/nibm.png",
-    alt: "NIBM",
-  },
-  {
-    src: "/img/unilogo/uj.png",
-    alt: "University of Jpura",
-  },
-  {
-    src: "/img/unilogo/up.png",
-    alt: "University of Peradeniya",
-  },
-  {
-    src: "/img/unilogo/cinec.png",
-    alt: "CINEC",
-  },
-  {
-    src: "/img/unilogo/esoft.png",
-    alt: "ESOFT",
-  },
-  {
-    src: "/img/unilogo/horizon.png",
-    alt: "Horizon Campus",
-  },
-  {
-    src: "/img/unilogo/kdu.png",
-    alt: "General Sir John Kotelawala Defence University",
-  },
-  {
-    src: "/img/unilogo/open.png",
-    alt: "Open University of Sri Lanka",
-  },
-  {
-    src: "/img/unilogo/ujaffna.png",
-    alt: "University of Jaffna",
-  },
-  {
-    src: "/img/unilogo/uk.png",
-    alt: "University of Kelaniya",
-  },
-  {
-    src: "/img/unilogo/ur.png",
-    alt: "University of Ruhuna",
-  },
-  {
-    src: "/img/unilogo/wayamba.png",
-    alt: "Wayamba University of Sri Lanka",
-  },
-];
-
+const defaultCompanies = universityLogosData.universityLogos.map(uni =>({
+      alt: uni.alt,
+      src: uni.logo,
+      
+  }))
 
 const TrustedUni = ({
   companiesTitle = "Trusted by Leading Universities",

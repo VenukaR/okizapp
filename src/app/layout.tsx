@@ -13,7 +13,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "OKIZ - Student Discounts & Deals | Save Money in Sri Lanka",
+    default: "OKIZ - Student Discounts & Deals | Save Money",
     template: "%s | OKIZ"
   },
   description: "Discover exclusive student discounts and deals in Sri Lanka. OKIZ connects 300,000+ university students with verified offers from local businesses. Save on food, shopping, services & more.",

@@ -1,7 +1,7 @@
 "use client";
 
 import AutoScroll from "embla-carousel-auto-scroll";
- 
+import universityLogosData from "@/data/university-logos.json";
 
 import {
   Carousel,
@@ -24,110 +24,13 @@ interface LogosHeroProps {
 
 const LogosHero = ({
   heading = "Trusted by Leading Universities",
-   logos = [
-    {
-      id: "logo-1",
-      description: "IIT Logo",
-      image: "/img/unilogo/iit.png",
+   logos = universityLogosData.universityLogos.map(uni =>({
+    id: uni.id,
+     description: uni.alt,
+      image: uni.logo,
       className: "h-20 w-auto",
-    },
-    {
-      id: "logo-2",
-      description: "NIBM Logo",
-      image: "/img/unilogo/nibm.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-3",
-      description: "NSBM Logo",
-      image: "/img/unilogo/nsbm.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-4",
-      description: "SLIIT Logo",
-      image: "/img/unilogo/sliit.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-5",
-      description: "UC Logo",
-      image: "/img/unilogo/uc.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-6",
-      description: "University of Moratuwa Logo",
-      image: "/img/unilogo/um.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-7",
-      description: "University of Jpura Logo",
-      image: "/img/unilogo/uj.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-8",
-      description: "University of Peradeniya Logo",
-      image: "/img/unilogo/up.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-9",
-      description: "CINEC Logo",
-      image: "/img/unilogo/cinec.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-10",
-      description: "ESOFT Logo",
-      image: "/img/unilogo/esoft.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-11",
-      description: "Horizon Logo",
-      image: "/img/unilogo/horizon.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-12",
-      description: "KDU Logo",
-      image: "/img/unilogo/kdu.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-13",
-      description: "Open University Logo",
-      image: "/img/unilogo/open.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-14",
-      description: "University of Jaffna Logo",
-      image: "/img/unilogo/ujaffna.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-15",
-      description: "University of Kelaniya Logo",
-      image: "/img/unilogo/uk.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-16",
-      description: "University of Ruhuna Logo",
-      image: "/img/unilogo/ur.png",
-      className: "h-20 w-auto",
-    },
-    {
-      id: "logo-17",
-      description: "Wayamba University Logo",
-      image: "/img/unilogo/wayamba.png",
-      className: "h-20 w-auto",
-    },
-  ]
+      
+  }))
 }: LogosHeroProps) => {
   return (
     <section className="py-10 bg-grey-50 dark:bg-gray-900 sm:py-16 lg:py-20 w-full">

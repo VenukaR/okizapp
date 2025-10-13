@@ -1,0 +1,123 @@
+{
+  "universityLogos": [
+    {
+      "id": "iit",
+      "name": "IIT",
+      "fullName": "Informatics Institute of Technology",
+      "logo": "/img/unilogo/iit.png",
+      "alt": "IIT Logo"
+    },
+    {
+      "id": "nibm",
+      "name": "NIBM",
+      "fullName": "National Institute of Business Management",
+      "logo": "/img/unilogo/nibm.png",
+      "alt": "NIBM Logo"
+    },
+    {
+      "id": "nsbm",
+      "name": "NSBM",
+      "fullName": "NSBM Green University",
+      "logo": "/img/unilogo/nsbm.png",
+      "alt": "NSBM Logo"
+    },
+    {
+      "id": "sliit",
+      "name": "SLIIT",
+      "fullName": "Sri Lanka Institute of Information Technology",
+      "logo": "/img/unilogo/sliit.png",
+      "alt": "SLIIT Logo"
+    },
+    {
+      "id": "uc",
+      "name": "University of Colombo",
+      "fullName": "University of Colombo",
+      "logo": "/img/unilogo/uc.png",
+      "alt": "University of Colombo Logo"
+    },
+    {
+      "id": "um",
+      "name": "University of Moratuwa",
+      "fullName": "University of Moratuwa",
+      "logo": "/img/unilogo/um.png",
+      "alt": "University of Moratuwa Logo"
+    },
+    {
+      "id": "uj",
+      "name": "University of Jayewardenepura",
+      "fullName": "University of Sri Jayewardenepura",
+      "logo": "/img/unilogo/uj.png",
+      "alt": "University of Jayewardenepura Logo"
+    },
+    {
+      "id": "up",
+      "name": "University of Peradeniya",
+      "fullName": "University of Peradeniya",
+      "logo": "/img/unilogo/up.png",
+      "alt": "University of Peradeniya Logo"
+    },
+    {
+      "id": "cinec",
+      "name": "CINEC",
+      "fullName": "CINEC Maritime Campus",
+      "logo": "/img/unilogo/cinec.png",
+      "alt": "CINEC Logo"
+    },
+    {
+      "id": "esoft",
+      "name": "ESOFT",
+      "fullName": "ESOFT Metro Campus",
+      "logo": "/img/unilogo/esoft.png",
+      "alt": "ESOFT Logo"
+    },
+    {
+      "id": "horizon",
+      "name": "Horizon Campus",
+      "fullName": "Horizon Campus",
+      "logo": "/img/unilogo/horizon.png",
+      "alt": "Horizon Campus Logo"
+    },
+    {
+      "id": "kdu",
+      "name": "KDU",
+      "fullName": "Kotelawala Defence University",
+      "logo": "/img/unilogo/kdu.png",
+      "alt": "KDU Logo"
+    },
+    {
+      "id": "open",
+      "name": "Open University",
+      "fullName": "Open University of Sri Lanka",
+      "logo": "/img/unilogo/open.png",
+      "alt": "Open University Logo"
+    },
+    {
+      "id": "ujaffna",
+      "name": "University of Jaffna",
+      "fullName": "University of Jaffna",
+      "logo": "/img/unilogo/ujaffna.png",
+      "alt": "University of Jaffna Logo"
+    },
+    {
+      "id": "uk",
+      "name": "University of Kelaniya",
+      "fullName": "University of Kelaniya",
+      "logo": "/img/unilogo/uk.png",
+      "alt": "University of Kelaniya Logo"
+    },
+    {
+      "id": "ur",
+      "name": "University of Ruhuna",
+      "fullName": "University of Ruhuna",
+      "logo": "/img/unilogo/ur.png",
+      "alt": "University of Ruhuna Logo"
+    },
+    {
+      "id": "wayamba",
+      "name": "Wayamba University",
+      "fullName": "Wayamba University of Sri Lanka",
+      "logo": "/img/unilogo/wayamba.png",
+      "alt": "Wayamba University Logo"
+    }
+  ]
+}

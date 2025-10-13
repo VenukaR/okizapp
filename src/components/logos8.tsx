@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from 'react';
- 
+import shopLogosData from '@/data/shop-logos.json';
 
 interface Logo {
+  id: string;
   name: string;
   logo: string;
+  alt: string;
   className?: string;
 }
 
@@ -16,64 +18,7 @@ interface Logos8Props {
 const Logos8 = ({
   title = "Trusted by Leading Partners",
   subtitle = "Join hundreds of companies already growing with us",
-  logos = [
-    {
-      name: "Hangla",
-      logo: "/img/shops/hangla.png",
-    },
-    {
-      name: "Sugar Beach",
-      logo: "/img/shops/sugarbeach.png",
-    },
-      {
-      name: "Pearl Beach",
-      logo: "/img/shops/pearlbeach.png",
-    },
-    {
-      name: "Soul Beach",
-      logo: "/img/shops/soulbeach.png",
-    },
-      {
-      name: "Hangla",
-      logo: "/img/shops/hangla.png",
-    },
-    {
-      name: "Pearl Beach",
-      logo: "/img/shops/pearlbeach.png",
-    },
-    // {
-    //   name: "Burger King",
-    //   logo: "/img/shops/bk.png",
-    // },
-    // {
-    //   name: "Caravan Fresh",
-    //   logo: "/img/shops/caravanfresh.png",
-    // },
-    // {
-    //   name: "Java Coffee",
-    //   logo: "/img/shops/java.png",
-    // },
-    // {
-    //   name: "No Limit",
-    //   logo: "/img/shops/nolimit.png",
-    // },
-    // {
-    //   name: "Pizza Hut",
-    //   logo: "/img/shops/pizzahut.png",
-    // },
-    // {
-    //   name: "Seven Seven",
-    //   logo: "/img/shops/sevenseven.png",
-    // },
-    // {
-    //   name: "Spaceylon",
-    //   logo: "/img/shops/spaceylon.png",
-    // },
-    // {
-    //   name: "Tea Avenue",
-    //   logo: "/img/shops/teaavenue.png",
-    // },
-  ],
+  logos = shopLogosData.shopLogos.slice(0, 8), // Display first 8 logos by default
 }: Logos8Props) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   
@@ -153,14 +98,14 @@ const Logos8 = ({
           >
             {duplicatedLogos.map((logo, index) => (
               <div
-                key={`${logo.name}-${index}`}
+                key={`${logo.id || logo.name}-${index}`}
                 className="flex-shrink-0 group"
               >
                 <div className="w-40 h-40 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 p-4 flex items-center justify-center">
                   <div className="relative w-full h-full">
                     <img
                       src={logo.logo}
-                      alt={`${logo.name} logo`}
+                      alt={logo.alt || `${logo.name} logo`}
                       className="w-full h-full object-contain rounded-xl transform group-hover:scale-110 transition-transform duration-700"
                       width={160}
                       height={160}

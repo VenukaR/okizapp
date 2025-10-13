@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
  
 import { AnimatedLogoCarousel } from "./animated-logo-carousel";
+import shopLogosData from "@/data/shop-logos.json";
 
 interface Hero7Props {
   heading?: string;
@@ -160,7 +161,7 @@ const Hero7 = ({
           />
         </div>
 
-        <div className="absolute top-44 left-1/3 opacity-22 animate-bounce" style={{ animationDuration: '5.5s', animationDelay: '3.5s' }}>
+        {/* <div className="absolute top-44 left-1/3 opacity-22 animate-bounce" style={{ animationDuration: '5.5s', animationDelay: '3.5s' }}>
           <img 
             src="/svg/nut.svg" 
             alt="Nut" 
@@ -228,7 +229,7 @@ const Hero7 = ({
             height={54}
             className="text-primary-dark filter drop-shadow-lg"
           />
-        </div>
+        </div> */}
       </div>
 
       <div className="container relative z-10 text-center mx-auto">
@@ -333,27 +334,10 @@ const Hero7 = ({
           title="Our Trusted Partners"
           subtitle="Register Today to Enjoy Exclusive Discounts and Benefits!"
           columnCount={columnCount}
-          logos={[
-            // { name: "Pizza Hut", logo: "/img/shops/pizzahut.png" },
-            // { name: "Spa Ceylon", logo: "/img/shops/spaceylon.png" },
-            // { name: "Caravan Fresh", logo: "/img/shops/caravanfresh.png" },
-            // { name: "Tea Avenue", logo: "/img/shops/teaavenue.png" },
-            // { name: "Bin Chun", logo: "/img/shops/binchun.png" },
-            // { name: "7-Eleven", logo: "/img/shops/sevenseven.png" },
-            // { name: "Barista", logo: "/img/shops/barista.png" },
-            // { name: "Java Lounge", logo: "/img/shops/java.png" },
-            // { name: "No Limit", logo: "/img/shops/nolimit.png" },
-            // { name: "Burger King", logo: "/img/shops/bk.png" },
-            {name:"Hangla",logo:"/img/shops/hangla.png"},
-            {name:"Sugarbeach",logo:"/img/shops/sugarbeach.png"},
-            {name: "Soul beach",logo:"/img/shops/soulbeach.png"},
-            {name: "Pearl Beach", logo:"/img/shops/pearlbeach.png"},
-              {name:"Hangla",logo:"/img/shops/hangla.png"},
-            {name:"Sugarbeach",logo:"/img/shops/sugarbeach.png"},
-            {name: "Soul beach",logo:"/img/shops/soulbeach.png"},
-            {name: "Pearl Beach", logo:"/img/shops/pearlbeach.png"},
-
-          ]}
+          logos={shopLogosData.shopLogos.map(shop => ({
+            name: shop.name,
+            logo: shop.logo
+          }))}
         />
       </section>
         </div>

@@ -10,6 +10,8 @@ import Logos8 from "@/components/logos8";
 import Team1 from "@/components/team1";
 import { StructuredData, faqSchema } from "@/components/structured-data";
 import { useState, useEffect } from "react";
+import shopLogosData from "@/data/shop-logos.json";
+import universityLogosData from "@/data/university-logos.json";
 
 // SEO: This would be ideal, but since this is a client component, we'll handle SEO in layout
 // export const metadata = {
@@ -37,37 +39,10 @@ const criticalImages = [
   "/img/shopkeeper.jpg",
   "/img/stud2.jpg",
   "/img/students.jpg",
-  // University logos
-  "/img/unilogo/iit.png",
-  "/img/unilogo/nibm.png",
-  "/img/unilogo/nsbm.png",
-  "/img/unilogo/sliit.png",
-  "/img/unilogo/uc.png",
-  "/img/unilogo/uj.png",
-  "/img/unilogo/um.png",
-  "/img/unilogo/up.png",
-  "/img/unilogo/cinec.png",
-  "/img/unilogo/esoft.png",
-  "/img/unilogo/horizon.png",
-  "/img/unilogo/kdu.png",
-  "/img/unilogo/open.png",
-  "/img/unilogo/ujaffna.png",
-  "/img/unilogo/uk.png",
-  "/img/unilogo/ur.png",
-  "/img/unilogo/wayamba.png",
-  // Shop logos
-  "/img/shops/barista.png",
-  "/img/shops/binchun.png",
-  "/img/shops/bk.png",
-  "/img/shops/caravanfresh.png",
-  "/img/shops/hangla.png",
-  "/img/shops/java.png",
-  "/img/shops/nolimit.png",
-  "/img/shops/pizzahut.png",
-  "/img/shops/sevenseven.png",
-  "/img/shops/spaceylon.png",
-  "/img/shops/sugarbeach.png",
-  "/img/shops/teaavenue.png",
+  // University logos (dynamically loaded from JSON)
+  ...universityLogosData.universityLogos.map(uni => uni.logo),
+  // Shop logos (dynamically loaded from JSON)
+  ...shopLogosData.shopLogos.map(shop => shop.logo),
   // Team photos
   "/img/team/dimal.jpeg"
 ];
