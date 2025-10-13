@@ -1,0 +1,34 @@
+{
+  "shopLogos": [
+    {
+      "id": "hangla",
+      "name": "Hangla",
+      "logo": "/img/shops/hangla.png",
+      "alt": "Hangla logo"
+    },
+    {
+      "id": "pearlbeach",
+      "name": "Pearl Beach",
+      "logo": "/img/shops/pearlbeach.png",
+      "alt": "Pearl Beach logo"
+    },
+    {
+      "id": "soulbeach",
+      "name": "Soul Beach",
+      "logo": "/img/shops/soulbeach.png",
+      "alt": "Soul Beach logo"
+    },
+    {
+      "id": "sugarbeach",
+      "name": "Sugar Beach",
+      "logo": "/img/shops/sugarbeach.png",
+      "alt": "Sugar Beach logo"
+    },
+    {
+      "id": "vito",
+      "name": "Vito",
+      "logo": "/img/shops/vito.png",
+      "alt": "Vito logo"
+    }
+  ]
+}
