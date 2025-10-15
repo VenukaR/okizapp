@@ -54,7 +54,7 @@ export default function Error({
             Something went wrong
           </h2>
           <p className="text-gray-600 text-lg mb-8 max-w-md mx-auto">
-            We're experiencing a technical issue. Our team has been notified and we're working to fix it!
+            We&apos;`re experiencing a technical issue. Our team has been notified and we&apos;`re working to fix it!
           </p>
         </motion.div>
 
