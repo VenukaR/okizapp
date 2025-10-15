@@ -9,7 +9,7 @@
     "lint": "eslint",
     "export": "next export",
     "postbuild": "next-sitemap",
-    "postbuild:cleanup": "find out -name '*.txt' -type f -delete && echo 'Cleaned up .txt files from build output'"
+    "postbuild:cleanup": "find out -name 'index.txt' -type f -delete && echo 'Cleaned up index.txt files from build output'"
   },
   "resolutions": {
     "which-collection": "1.0.1"
