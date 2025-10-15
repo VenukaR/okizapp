@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build --turbopack && npm run postbuild:cleanup",
     "start": "next start",
     "lint": "eslint",
     "export": "next export",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "postbuild:cleanup": "find out -name '*.txt' -type f -delete && echo 'Cleaned up .txt files from build output'"
   },
   "resolutions": {
     "which-collection": "1.0.1"
