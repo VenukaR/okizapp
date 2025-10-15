@@ -118,11 +118,11 @@ const Logos8 = ({
         </div>
 
         {/* Additional info */}
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <p className="text-sm text-gray-500 italic">
             Hover over any logo to pause the scroll
           </p>
-        </div>
+        </div> */}
       </div>
 
       <style jsx>{`
