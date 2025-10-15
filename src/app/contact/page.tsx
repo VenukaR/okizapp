@@ -45,7 +45,7 @@ export default function ContactPage() {
           <div className="absolute bottom-32 right-20 w-3 h-3 bg-white/30 rounded-full animate-bounce opacity-60" style={{ animationDuration: '4s', animationDelay: '1s' }}></div>
           <div className="absolute top-1/3 right-32 w-5 h-5 bg-white/30 rounded-full animate-bounce opacity-60" style={{ animationDuration: '5s', animationDelay: '2s' }}></div>
 
-          <div className="relative z-10 text-center px-8 lg:px-12 max-w-md">
+          <div className="relative z-10 text-center px-8 lg:px-12 py-10 max-w-md">
             {/* Logo */}
             <div className="mb-8">
               <div className="mx-auto w-40 h-20 bg-white backdrop-blur-sm rounded-2xl flex items-center justify-center p-4 shadow-xl border border-white/30">
