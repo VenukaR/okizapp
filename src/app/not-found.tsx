@@ -35,7 +35,7 @@ export default function NotFound() {
             Oops! Page Not Found
           </h2>
           <p className="text-gray-600 text-lg mb-8 max-w-md mx-auto">
-            The page you're looking for doesn't exist. But don't worry, there are plenty of discounts waiting for you!
+            The page you&apos;re looking for doesn&apos;t exist. But don&apos;t worry, there are plenty of discounts waiting for you!
           </p>
         </motion.div>
 
